@@ -7,9 +7,9 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 // First create the widget for the admin panel
 class custom_post_widget extends WP_Widget {
-	function custom_post_widget() {
-		$widget_ops = array( 'description' => __( 'Displays custom post content in a widget', 'custom-post-widget' ) );
-		$this->WP_Widget( 'custom_post_widget', __( 'Content Block', 'custom-post-widget' ), $widget_ops );
+	function __construct() {
+		$widget_ops = array( 'classname' => 'widget_custom_post_widget', 'description' => __( 'Displays custom post content in a widget', 'custom-post-widget' ) );
+		parent::__construct( 'custom_post_widget', __( 'Content Block', 'custom-post-widget' ), $widget_ops );
 	}
 
 	function form( $instance ) {
@@ -90,25 +90,28 @@ class custom_post_widget extends WP_Widget {
 		$show_custom_post_title = isset( $instance['show_custom_post_title'] ) ? $instance['show_custom_post_title'] : false;
 		$show_featured_image  = isset($instance['show_featured_image']) ? $instance['show_featured_image'] : false;
 		$apply_content_filters  = isset($instance['apply_content_filters']) ? $instance['apply_content_filters'] : false;
-		$content_post = get_post($custom_post_id);
+		$content_post = get_post( $custom_post_id );
+		$post_status = get_post_status( $custom_post_id );
 		$content = $content_post->post_content;
-		// Display custom widget frontend
-		if ( $located = locate_template( 'custom-post-widget.php' ) ) {
-			require $located;
-			return;
+		if ( $post_status == 'publish' ) {
+			// Display custom widget frontend
+			if ( $located = locate_template( 'custom-post-widget.php' ) ) {
+				require $located;
+				return;
+			}
+			if ( !$apply_content_filters ) { // Don't apply the content filter if checkbox selected
+				$content = apply_filters( 'the_content', $content);
+			}
+			echo $before_widget;
+			if ( $show_custom_post_title ) {
+				echo $before_title . apply_filters( 'widget_title',$content_post->post_title) . $after_title; // This is the line that displays the title (only if show title is set) 
+			}
+			if ( $show_featured_image ) {
+				echo get_the_post_thumbnail( $content_post -> ID );
+			}
+			echo do_shortcode( $content ); // This is where the actual content of the custom post is being displayed
+			echo $after_widget;
 		}
-		if ( !$apply_content_filters ) { // Don't apply the content filter if checkbox selected
-			$content = apply_filters( 'the_content', $content);
-		}
-		echo $before_widget;
-		if ( $show_custom_post_title ) {
-			echo $before_title . apply_filters( 'widget_title',$content_post->post_title) . $after_title; // This is the line that displays the title (only if show title is set) 
-		}
-		if ( $show_featured_image ) {
-			echo get_the_post_thumbnail( $content_post -> ID );
-		}
-		echo do_shortcode( $content ); // This is where the actual content of the custom post is being displayed
-		echo $after_widget;
 	}
 }
 
@@ -168,7 +171,10 @@ function custom_post_widget_shortcode( $atts ) {
 	extract( shortcode_atts( array(
 		'id' => '',
 		'slug' => '',
-		'class' => 'content_block'
+		'class' => 'content_block',
+		'suppress_content_filters' => 'no',
+        'title' => 'no',
+        'title_tag' => 'h3'
 	), $atts ) );
 
 	if ( $slug ) {
@@ -190,7 +196,14 @@ function custom_post_widget_shortcode( $atts ) {
 
 		foreach( $content_post as $post ) :
 			$content .= '<div class="'. esc_attr($class) .'" id="custom_post_widget-' . $id . '">';
-			$content .= apply_filters( 'the_content', $post->post_content);
+			if ( $title === 'yes' ) {
+				$content .= '<' . esc_attr( $title_tag ) . '>' . $post->post_title . '</' . esc_attr( $title_tag ) . '>'; 
+			}
+			if ( $suppress_content_filters === 'no' ) {
+				$content .= apply_filters( 'the_content', $post->post_content);
+			} else {
+				$content .= $post->post_content; 
+			}
 			$content .= '</div>';
 		endforeach;
 	}
@@ -202,7 +215,7 @@ add_shortcode( 'content_block', 'custom_post_widget_shortcode' );
 // Only add content_block icon above posts and pages
 function cpw_add_content_block_button() {
 	global $current_screen;
-	if( 'content_block' != $current_screen -> post_type ) {
+    if ( ( 'content_block' != $current_screen -> post_type ) && ( 'toplevel_page_revslider' != $current_screen -> id ) ) {
 		add_action( 'media_buttons', 'add_content_block_icon' );
 		add_action( 'admin_footer', 'add_content_block_popup' );
 	}

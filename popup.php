@@ -24,6 +24,7 @@ function add_content_block_popup() { ?>
 	<script>
 		function selectContentBlockId(select) {
 			content_id = select.options[select.selectedIndex].value;
+			content_slug = select.options[select.selectedIndex].getAttribute("data-slug");
 		}
 		function insertContentBlockShortcode() {
 			if (typeof content_id === 'undefined') {
@@ -31,7 +32,7 @@ function add_content_block_popup() { ?>
 				return false;
 			}
 			var win = window.dialogArguments || opener || parent || top;
-			win.send_to_editor( "[content_block id=" + content_id + "]" );
+			win.send_to_editor( "[content_block id=" + content_id + " slug=" + content_slug + "]" );
 		}
 	</script>
 	<div id="content-block-form" style="display: none;">
@@ -51,7 +52,7 @@ function add_content_block_popup() { ?>
 					$content_block = get_posts( $args );
 					if ($content_block) {
 						foreach( $content_block as $content_block ) : setup_postdata( $content_block );
-							echo '<option value="' . $content_block->ID . '">' . $content_block->post_title . '</option>';
+							echo '<option value="' . $content_block->ID . '" data-slug="' . $content_block->post_name . '">' . $content_block->post_title . '</option>';
 						endforeach;
 					} else {
 						echo '<option value="">' . __( 'No content blocks available', 'custom-post-widget' ) . '</option>';

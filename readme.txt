@@ -1,11 +1,9 @@
 === Custom Post Widget ===
 Contributors: vanderwijk
-Author URI: http://www.vanderwijk.com/
-Donate link: http://www.vanderwijk.com/wordpress/support/
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
-Requires at least: 2.9.2
-Tested up to: 4.0
-Stable tag: 2.6
+Requires at least: 4.0
+Tested up to: 4.5
+Stable tag: 2.8.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +11,7 @@ This plugin enables you to edit and display Content Blocks in a sidebar widget o
 
 == Description ==
 
-The Custom Post Widget allows you to display the contents of a specific custom post in a widget.
+The [Custom Post Widget](http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=website&utm_campaign=custom_post_widget) allows you to display the contents of a specific custom post in a widget on in the content area using a shortcode.
 
 Even though you could use the text widget that comes with the default WordPress install, this plugin has some major benefits:
 
@@ -29,17 +27,18 @@ To add content to a widget, drag it to the required position in the sidebar and 
 
 **Includes the following translations:**
 
-* German (de_DE) by [Caspar H&uuml;binger](http://glueckpress.com/)
-* French (fr_FR) by [Alexandre Simard](http://brocheafoin.biz/)
+* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/) 
 * Dutch (nl_NL) by [Johan van der Wijk](http://vanderwijk.nl)
+* French (fr_FR) by [Alexandre Simard](http://brocheafoin.biz/)
+* German (de_DE) by [Caspar H&uuml;binger](http://glueckpress.com/)
+* Hebrew (he_IL) by [Daniel Cohen Gindi](https://github.com/danielgindi)
+* Italian (it_IT) by [Ercicion](http://ercicion.altervista.org/blog/)
 * Polish (pl_PL) by [Kuba Skublicki](https://www.linkedin.com/in/kubecki)
 * Portuguese (pt_BR) by [Ronaldo Chevalier](http://www.hostmeta.com.br/)
 * Russian (ru_RU) by [Vitaliy Kaplya](http://www.dasayt.com/) 
 * Swedish (sv_SE) by [Andreas Larsson](http://krokedil.se)
 
-More translations are always welcome, please [contact me](http://www.vanderwijk.com/contact) to find out how you can help.
-
-You can find more information about this plugin and a screencast video which shows the plugin in action on the [plugin homepage](http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/).
+More translations are very welcome!
 
 == Screenshots ==
 
@@ -76,20 +75,45 @@ This plugin has built-in support for the featured image functionality on the edi
 
 = My social sharing plugin adds buttons to all the Custom Post Widget areas =
 
-If your social media sharing plugin adds buttons to the widget areas you could check the 'Do not apply content filters' checkbox. Note that when this is done, WordPress will also stop adding paragraph tags to your text, so use this setting with caution. It is much better to ask the developer of the social media sharing buttons plugin to correctly use the content filters (see http://pippinsplugins.com/playing-nice-with-the-content-filter/).
+If your social media sharing plugin adds buttons to the widget areas you could check the 'Do not apply content filters' checkbox. Note that when this is done, WordPress will also stop adding paragraph tags to your text, so use this setting with caution. It is much better to ask the developer of the social media sharing buttons plugin to correctly use the content filters (see http://pippinsplugins.com/playing-nice-with-the-content-filter/ for more information on this). If you are embedding your content block with the shortcode, add the following: `suppress_content_filters="yes"`
 
 = The title and featured image are not displayed when using the shortcode =
 
 Currently the shortcode function only outputs the post content of the content block, future support for displaying the title and/or the attached featured image is being considered.
 
+= I have a feature request =
+
+Please post your feature request on [the support forum](https://wordpress.org/support/plugin/custom-post-widget)
+These new features are on the to-do list:
+
+* Display the content block featured image when using the shortcode
+* Front-end editing of the content blocks
+* Display shortcode on content block edit screen and/or overview page similar to Contact Form 7
+* Visual Composer integration
+
 = How can I make advanced changes to the widget layout? =
 
 You can create your own widget template and upload this to your theme folder. See [this support topic](http://wordpress.org/support/topic/patch-custom-widget-frontends?replies=1) for more information about this feature.
+
+= Can I make the post type public?  = 
+
+You can make the post type public by adding the following code to your theme's functions.php file:
+`function filter_content_block_init() {
+	$content_block_public = true;
+	return $content_block_public;
+}
+add_filter('content_block_post_type','filter_content_block_init');`
+
+Alternatively you can use [this third-party plugin](http://demomentsomtres.com/english/wordpress-plugins/demomentsomtres-wpbakery-visual-composer-custom-post-widget/).
 
 = Post ID's confuse me, can I use the post slug for embedding a content block? =
 
 Yes, v2.6 now gives you the option to use the content block's url slug in the shortcode. Use the following syntax for doing this: `[content_block slug=my-content-block]`.
 Note that if you ever change the slug of a content block, the embedding no longer works. Therefore I recommend using the post ID instead (which never changes).
+
+= Can I specify a custom class for the embedded content blocks? =
+
+By default the shortcode adds a div around the content block with the class content_block. If you like, you can change this class by adding it to the shortcode: [content_block id=198 slug=our-wordpress-plugins class=my-class]
 
 = How can I embed a content block in my template file using php code? =
 
@@ -107,6 +131,42 @@ DO NOT click the 'Broken' button in the compatibility area of the plugin directo
 Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
 
 == Changelog ==
+
+= 2.8.5 =
+Fix for minor compatibility issue when using the Slider Revolution plugin
+
+= 2.8.4 =
+You can now optionally show the post title when using the shortcode by adding `title=yes` to the shortcode
+
+= 2.8.3 =
+Added Hebrew translation as provided by Daniel Cohen Gindi
+
+= 2.8.1 =
+Updated language files.
+
+= 2.8 =
+Added the option to suppress the content filters when using the shortcode. Thanks to adelval for providing the code, see https://wordpress.org/support/topic/add-option-to-not-apply-content-filters-in-shortcode?replies=4
+
+= 2.7.9 =
+Changed method for creating the widget in preparation of PHP7 support.
+
+= 2.7.7 =
+Added Czech translation.
+
+= 2.7.6 =
+Added Italian translation.
+
+= 2.7.5 =
+Updated branding and language files.
+
+= 2.7.4 =
+The shortcode now includes the slug of the content block (which is still optional), see https://wordpress.org/support/topic/shortcodes-using-slug-name-rather-than-id for more information on this.
+
+= 2.7.2 =
+The post status is now used for displaying the content blocks in the widget areas, only published content blocks are now displayed. Thanks to tmbdesign.co.uk for suggesting this change.
+
+= 2.7 =
+Added dismissable support notification.
 
 = 2.6 =
 Added the possibility for using the content block slug in the shortcode.
