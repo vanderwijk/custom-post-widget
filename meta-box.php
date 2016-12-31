@@ -1,15 +1,9 @@
 <?php
 
-function cpw_add_meta_box() {
-	add_meta_box(
-		'cpw_sectionid',
-		__( 'Content Block Information', 'custom-post-widget' ),
-		'cpw_meta_box',
-		'content_block',
-		'side'
-	);
+function add_info_meta_box() {
+	add_meta_box( 'cpw_info', __( 'Content Block Information', 'custom-post-widget' ), 'cpw_meta_box', 'content_block', 'side', 'low' );
 }
-add_action( 'add_meta_boxes', 'cpw_add_meta_box' );
+add_action( 'add_meta_boxes_content_block', 'add_info_meta_box' );
 
 function cpw_meta_box( $post ) {
 	wp_nonce_field( 'cpw_meta_box', 'cpw_meta_box_nonce' );
@@ -26,7 +20,7 @@ function cpw_save_postdata( $post_id ) {
 	if ( ! wp_verify_nonce( $nonce, 'cpw_meta_box' ) )
 		return $post_id;
 
-	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
 		return $post_id;
 
 	if ( 'content_block' == $_POST['post_type'] ) {
@@ -43,11 +37,11 @@ function cpw_save_postdata( $post_id ) {
 add_action( 'save_post', 'cpw_save_postdata' );
 
 // Add content block information column to overview
-function cpw_modify_material_table( $column ) {
+function cpw_modify_content_block_table( $column ) {
 	$column['content_block_information'] = __( 'Content Block Information', 'custom-post-widget' );
 	return $column;
 }
-add_filter( 'manage_edit-content_block_columns', 'cpw_modify_material_table' );
+add_filter( 'manage_edit-content_block_columns', 'cpw_modify_content_block_table' );
 
 function cpw_modify_post_table_row( $column_name, $post_id ) {
 	$custom_fields = get_post_custom( $post_id );

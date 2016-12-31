@@ -3,7 +3,7 @@ Contributors: vanderwijk
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
 Requires at least: 4.0
 Tested up to: 4.7
-Stable tag: 2.8.5
+Stable tag: 2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,7 +27,7 @@ To add content to a widget, drag it to the required position in the sidebar and 
 
 **Includes the following translations:**
 
-* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/) 
+* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/)
 * Dutch (nl_NL) by [Johan van der Wijk](http://vanderwijk.nl)
 * French (fr_FR) by [Alexandre Simard](http://brocheafoin.biz/)
 * German (de_DE) by [Caspar H&uuml;binger](http://glueckpress.com/)
@@ -35,7 +35,7 @@ To add content to a widget, drag it to the required position in the sidebar and 
 * Italian (it_IT) by [Ercicion](http://ercicion.altervista.org/blog/)
 * Polish (pl_PL) by [Kuba Skublicki](https://www.linkedin.com/in/kubecki)
 * Portuguese (pt_BR) by [Ronaldo Chevalier](http://www.hostmeta.com.br/)
-* Russian (ru_RU) by [Vitaliy Kaplya](http://www.dasayt.com/) 
+* Russian (ru_RU) by [Vitaliy Kaplya](http://www.dasayt.com/)
 * Swedish (sv_SE) by [Andreas Larsson](http://krokedil.se)
 
 More translations are very welcome!
@@ -95,7 +95,7 @@ These new features are on the to-do list:
 
 You can create your own widget template and upload this to your theme folder. See [this support topic](http://wordpress.org/support/topic/patch-custom-widget-frontends?replies=1) for more information about this feature.
 
-= Can I make the post type public?  = 
+= Can I make the post type public?  =
 
 You can make the post type public by adding the following code to your theme's functions.php file:
 `function filter_content_block_init() {
