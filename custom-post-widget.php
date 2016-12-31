@@ -46,5 +46,16 @@ function custom_post_widget_load_widgets() {
 	register_widget( 'custom_post_widget' );
 }
 
-require_once( 'meta-box.php' );
-require_once( 'popup.php' );
+// Admin-only functions
+if ( is_admin() ) {
+	function cpw_donation( $links, $file ) {
+		if ( $file == plugin_basename(__FILE__)) {
+			array_push( $links, '<a href="https://paypal.me/vanderwijk">Make a Donation</a>' );
+			return $links;
+		}
+	}
+	add_filter( 'plugin_action_links', 'cpw_donation', 10, 2 );
+
+	require_once( 'meta-box.php' );
+	require_once( 'popup.php' );
+}
