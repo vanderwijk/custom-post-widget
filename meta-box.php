@@ -1,23 +1,28 @@
 <?php
 
-function add_info_meta_box() {
-	add_meta_box( 'cpw_info', __( 'Content Block Information', 'custom-post-widget' ), 'cpw_meta_box', 'content_block', 'side', 'low' );
+function cpw_add_meta_boxes() {
+	add_meta_box( 'cpw_shortcode', __( 'Content Block Shortcodes', 'custom-post-widget' ), 'cpw_shortcode_meta_box', 'content_block', 'side' );
+	add_meta_box( 'cpw_info', __( 'Content Block Information', 'custom-post-widget' ), 'cpw_info_meta_box', 'content_block', 'side' );
 }
-add_action( 'add_meta_boxes_content_block', 'add_info_meta_box' );
+add_action( 'add_meta_boxes_content_block', 'cpw_add_meta_boxes' );
 
-function cpw_meta_box( $post ) {
-	wp_nonce_field( 'cpw_meta_box', 'cpw_meta_box_nonce' );
+function cpw_shortcode_meta_box( $post ) {
+	echo '<textarea id="cpw_content_block_information" cols="40" rows="4" name="cpw_content_block_information" style="height: 8em; width: 100%;"></textarea>';
+}
+
+function cpw_info_meta_box( $post ) {
+	wp_nonce_field( 'cpw_info_meta_box', 'cpw_info_meta_box_nonce' );
 	$value = get_post_meta( $post->ID, '_content_block_information', true );
 	echo '<textarea id="cpw_content_block_information" cols="40" rows="4" name="cpw_content_block_information" style="height: 8em; width: 100%;">' . esc_attr( $value ) . '</textarea>';
 }
 
 function cpw_save_postdata( $post_id ) {
-	if ( ! isset( $_POST['cpw_meta_box_nonce'] ) )
+	if ( ! isset( $_POST['cpw_info_meta_box_nonce'] ) )
 		return $post_id;
 
-	$nonce = $_POST['cpw_meta_box_nonce'];
+	$nonce = $_POST['cpw_info_meta_box_nonce'];
 
-	if ( ! wp_verify_nonce( $nonce, 'cpw_meta_box' ) )
+	if ( ! wp_verify_nonce( $nonce, 'cpw_info_meta_box' ) )
 		return $post_id;
 
 	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )

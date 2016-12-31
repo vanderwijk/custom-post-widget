@@ -48,13 +48,18 @@ function custom_post_widget_load_widgets() {
 
 // Admin-only functions
 if ( is_admin() ) {
-	function cpw_donation( $links, $file ) {
-		if ( $file == plugin_basename(__FILE__)) {
-			array_push( $links, '<a href="https://paypal.me/vanderwijk">Make a Donation</a>' );
+
+	// Add donation link to plugin description
+	if ( ! function_exists ( 'cpw_plugin_links' ) ) {
+		function cpw_plugin_links( $links, $file ) {
+			$base = plugin_basename( __FILE__ );
+			if ( $file == $base ) {
+				$links[] = '<a href="https://wordpress.org/support/plugin/custom-post-widget/reviews/" target="_blank">' . __( 'Review ', 'custom-post-widget' ) . ' <span class="dashicons dashicons-thumbs-up"></span></a> | <a href="https://paypal.me/vanderwijk">' . __( 'Donate', 'custom-post-widget' ) . ' <span class="dashicons dashicons-money"></span></a>';
+			}
 			return $links;
 		}
 	}
-	add_filter( 'plugin_action_links', 'cpw_donation', 10, 2 );
+	add_filter( 'plugin_row_meta', 'cpw_plugin_links', 10, 2 );
 
 	require_once( 'meta-box.php' );
 	require_once( 'popup.php' );
