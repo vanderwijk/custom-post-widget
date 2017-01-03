@@ -23,6 +23,7 @@ function cpw_shortcode_meta_box( $post ) { ?>
 function cpw_info_meta_box( $post ) {
 	wp_nonce_field( 'cpw_info_meta_box', 'cpw_info_meta_box_nonce' );
 	$value = get_post_meta( $post -> ID, '_content_block_information', true );
+	echo '<p>' . __( 'You can use this field to describe this content block:','custom-post-widget' ) . '</p>';
 	echo '<textarea class="cpw-information" id="cpw_content_block_information" cols="40" rows="4" name="cpw_content_block_information">' . esc_attr( $value ) . '</textarea>';
 }
 

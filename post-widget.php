@@ -55,7 +55,7 @@ class custom_post_widget extends WP_Widget {
 
 		<p>
 			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['show_custom_post_title'] ), true ); ?> id="<?php echo $this->get_field_id( 'show_custom_post_title' ); ?>" name="<?php echo $this->get_field_name( 'show_custom_post_title' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_custom_post_title' ); ?>"><?php echo __( 'Show Post Title', 'custom-post-widget' ) ?></label>
+			<label for="<?php echo $this->get_field_id( 'show_custom_post_title' ); ?>"><?php echo __( 'Show post title', 'custom-post-widget' ) ?></label>
 		</p>
 
 		<p>

@@ -54,7 +54,7 @@ if ( is_admin() ) {
 		function cpw_plugin_links( $links, $file ) {
 			$base = plugin_basename( __FILE__ );
 			if ( $file == $base ) {
-				$links[] = '<a href="https://wordpress.org/support/plugin/custom-post-widget/reviews/" target="_blank">' . __( 'Review ', 'custom-post-widget' ) . ' <span class="dashicons dashicons-thumbs-up"></span></a> | <a href="https://paypal.me/vanderwijk">' . __( 'Donate', 'custom-post-widget' ) . ' <span class="dashicons dashicons-money"></span></a>';
+				$links[] = '<a href="https://wordpress.org/support/plugin/custom-post-widget/reviews/" target="_blank">' . __( 'Review', 'custom-post-widget' ) . ' <span class="dashicons dashicons-thumbs-up"></span></a> | <a href="https://paypal.me/vanderwijk">' . __( 'Donate', 'custom-post-widget' ) . ' <span class="dashicons dashicons-money"></span></a>';
 			}
 			return $links;
 		}

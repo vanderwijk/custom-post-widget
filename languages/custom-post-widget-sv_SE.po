@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Custom Post Widget v2.5.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-26 14:35+0200\n"
-"PO-Revision-Date: 2015-09-26 14:35+0200\n"
-"Last-Translator: aztek <info@aztek.se>\n"
+"POT-Creation-Date: 2017-01-03 11:58+0100\n"
+"PO-Revision-Date: 2017-01-03 12:00+0100\n"
+"Last-Translator: Johan van der Wijk <info@vanderwijk.nl>\n"
 "Language-Team: \n"
 "Language: sv_SE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.8.5\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
 "_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2\n"
@@ -20,1294 +20,234 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: ..\n"
 
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:19
-#: ../tags/1.1.1/custom-post-widget.php:19
-#: ../tags/1.1/custom-post-widget.php:19
-#: ../tags/1.2.1/custom-post-widget.php:19
-#: ../tags/1.2/custom-post-widget.php:19 ../tags/1.4/post-widget.php:8
-#: ../tags/1.5/post-widget.php:8 ../tags/1.6/post-widget.php:8
-#: ../tags/1.7/post-widget.php:8 ../tags/1.8.1/post-widget.php:8
-#: ../tags/1.8.3/post-widget.php:6
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:19
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:19
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:19
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:19
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:19
-#: ../tags/1.8.4/tags/1.4/post-widget.php:8
-#: ../tags/1.8.4/tags/1.5/post-widget.php:8
-#: ../tags/1.8.4/tags/1.6/post-widget.php:8
-#: ../tags/1.8.4/tags/1.7/post-widget.php:8
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:8
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:6
-#: ../tags/1.8.4/tags/1.8/post-widget.php:8
-#: ../tags/1.8.4/trunk/post-widget.php:6 ../tags/1.8.5/post-widget.php:6
-#: ../tags/1.8.6/post-widget.php:6 ../tags/1.8/post-widget.php:8
-#: ../tags/1.9.2/post-widget.php:6 ../tags/1.9.3/post-widget.php:6
-#: ../tags/1.9.4/post-widget.php:6 ../tags/1.9.5/post-widget.php:6
-#: ../tags/1.9.6/post-widget.php:6 ../tags/1.9.7/post-widget.php:11
-#: ../tags/1.9.8/post-widget.php:11 ../tags/1.9/post-widget.php:6
-#: ../tags/2.0.1/post-widget.php:11 ../tags/2.0.2/post-widget.php:11
-#: ../tags/2.0/post-widget.php:11 ../tags/2.3.1/post-widget.php:11
-#: ../tags/2.3.2/post-widget.php:11 ../tags/2.3.3/post-widget.php:11
-#: ../tags/2.3.4/post-widget.php:11 ../tags/2.3.5/post-widget.php:11
-#: ../tags/2.3/post-widget.php:11 ../tags/2.4.1/post-widget.php:11
-#: ../tags/2.4.2/post-widget.php:11 ../tags/2.4.3/post-widget.php:11
-#: ../tags/2.4.5/post-widget.php:11 ../tags/2.5/post-widget.php:11
-#: ../trunk/post-widget.php:11 post-widget.php:11
-msgid "Displays custom post content in a widget"
-msgstr "Lägg till innehållsblock i en widget"
+#: custom-post-widget.php:57
+msgid "Review"
+msgstr "Recension"
+
+#: custom-post-widget.php:57
+msgid "Donate"
+msgstr "Donera"
 
 # @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:20
-#: ../tags/1.1.1/custom-post-widget.php:20
-#: ../tags/1.1/custom-post-widget.php:20
-#: ../tags/1.2.1/custom-post-widget.php:20
-#: ../tags/1.2/custom-post-widget.php:20 ../tags/1.4/post-widget.php:9
-#: ../tags/1.5/post-widget.php:9 ../tags/1.6/post-widget.php:9
-#: ../tags/1.7/post-widget.php:9 ../tags/1.8.1/post-widget.php:9
-#: ../tags/1.8.3/post-widget.php:7
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:20
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:20
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:20
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:20
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:20
-#: ../tags/1.8.4/tags/1.4/post-widget.php:9
-#: ../tags/1.8.4/tags/1.5/post-widget.php:9
-#: ../tags/1.8.4/tags/1.6/post-widget.php:9
-#: ../tags/1.8.4/tags/1.7/post-widget.php:9
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:9
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:7
-#: ../tags/1.8.4/tags/1.8/post-widget.php:9
-#: ../tags/1.8.4/trunk/post-widget.php:7 ../tags/1.8.5/post-widget.php:7
-#: ../tags/1.8.6/post-widget.php:7 ../tags/1.8/post-widget.php:9
-#: ../tags/1.9.2/post-widget.php:7 ../tags/1.9.3/post-widget.php:7
-#: ../tags/1.9.3/post-widget.php:84 ../tags/1.9.4/post-widget.php:7
-#: ../tags/1.9.5/post-widget.php:7 ../tags/1.9.6/post-widget.php:7
-#: ../tags/1.9.7/post-widget.php:12 ../tags/1.9.8/post-widget.php:12
-#: ../tags/1.9/post-widget.php:7 ../tags/2.0.1/post-widget.php:12
-#: ../tags/2.0.2/post-widget.php:12 ../tags/2.0/post-widget.php:12
-#: ../tags/2.3.1/post-widget.php:12 ../tags/2.3.2/post-widget.php:12
-#: ../tags/2.3.3/post-widget.php:12 ../tags/2.3.4/post-widget.php:12
-#: ../tags/2.3.5/post-widget.php:12 ../tags/2.3/post-widget.php:12
-#: ../tags/2.4.1/post-widget.php:12 ../tags/2.4.2/post-widget.php:12
-#: ../tags/2.4.3/post-widget.php:12 ../tags/2.4.5/post-widget.php:12
-#: ../tags/2.5/post-widget.php:12 ../trunk/post-widget.php:12
-#: post-widget.php:12
-msgid "Content Block"
-msgstr "Innehållsblock"
+#: meta-box.php:5 meta-box.php:57
+msgid "Content Block Information"
+msgstr "Information om innehållsblocket"
+
+#: meta-box.php:6
+msgid "Content Block Shortcodes"
+msgstr "Innehållsblock kortkoder"
+
+#: meta-box.php:12
+msgid ""
+"You can place this content block into your posts, pages, custom post types "
+"or widgets using the shortcode below:"
+msgstr ""
+"Du kan placera denna innehållsblock i dina inlägg, sidor, typer anpassade "
+"post eller widgets som använder kortkod nedan:"
+
+#: meta-box.php:14 meta-box.php:18
+msgid "Copy to clipboard"
+msgstr "Kopiera till klippbord"
+
+#: meta-box.php:16
+msgid "Use this shortcode to include the content block title:"
+msgstr "Använd denna kortkod att inkludera innehållsblocket titel:"
+
+#: meta-box.php:26
+msgid "You can use this field to describe this content block:"
+msgstr "Du kan använda detta fält för att beskriva detta innehållsblock:"
 
 # @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:29
-#: ../tags/1.1.1/custom-post-widget.php:29
-#: ../tags/1.1/custom-post-widget.php:29
-#: ../tags/1.2.1/custom-post-widget.php:30
-#: ../tags/1.2/custom-post-widget.php:30 ../tags/1.4/post-widget.php:19
-#: ../tags/1.5/post-widget.php:19 ../tags/1.6/post-widget.php:19
-#: ../tags/1.7/post-widget.php:19 ../tags/1.8.1/post-widget.php:19
-#: ../tags/1.8.3/post-widget.php:15
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:29
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:29
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:29
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:30
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:30
-#: ../tags/1.8.4/tags/1.4/post-widget.php:19
-#: ../tags/1.8.4/tags/1.5/post-widget.php:19
-#: ../tags/1.8.4/tags/1.6/post-widget.php:19
-#: ../tags/1.8.4/tags/1.7/post-widget.php:19
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:19
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:15
-#: ../tags/1.8.4/tags/1.8/post-widget.php:19
-#: ../tags/1.8.4/trunk/post-widget.php:15 ../tags/1.8.5/post-widget.php:15
-#: ../tags/1.8.6/post-widget.php:15 ../tags/1.8/post-widget.php:19
-#: ../tags/1.9.2/post-widget.php:15 ../tags/1.9.3/post-widget.php:15
-#: ../tags/1.9.4/post-widget.php:17 ../tags/1.9.5/post-widget.php:17
-#: ../tags/1.9.6/post-widget.php:20 ../tags/1.9.7/post-widget.php:26
-#: ../tags/1.9.8/post-widget.php:26 ../tags/1.9/post-widget.php:15
-#: ../tags/2.0.1/post-widget.php:26 ../tags/2.0.2/post-widget.php:26
-#: ../tags/2.0/post-widget.php:26 ../tags/2.3.1/post-widget.php:26
-#: ../tags/2.3.2/post-widget.php:26 ../tags/2.3.3/post-widget.php:26
-#: ../tags/2.3.4/post-widget.php:26 ../tags/2.3.5/post-widget.php:26
-#: ../tags/2.3/post-widget.php:26 ../tags/2.4.1/post-widget.php:26
-#: ../tags/2.4.2/post-widget.php:26 ../tags/2.4.3/post-widget.php:26
-#: ../tags/2.4.5/post-widget.php:26 ../tags/2.5/post-widget.php:26
-#: ../trunk/post-widget.php:26 post-widget.php:26
-msgid "Content Block to Display:"
-msgstr "Välj innehållsblock att visa:"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:84
-#: ../tags/1.1.1/custom-post-widget.php:84
-#: ../tags/1.1/custom-post-widget.php:84
-#: ../tags/1.2.1/custom-post-widget.php:100
-#: ../tags/1.2/custom-post-widget.php:105 ../tags/1.4/post-widget.php:91
-#: ../tags/1.5/post-widget.php:91 ../tags/1.6/post-widget.php:88
-#: ../tags/1.7/post-widget.php:88 ../tags/1.8.1/post-widget.php:88
-#: ../tags/1.8.3/post-widget.php:74
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:84
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:84
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:84
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:100
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:105
-#: ../tags/1.8.4/tags/1.4/post-widget.php:91
-#: ../tags/1.8.4/tags/1.5/post-widget.php:91
-#: ../tags/1.8.4/tags/1.6/post-widget.php:88
-#: ../tags/1.8.4/tags/1.7/post-widget.php:88
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:88
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:74
-#: ../tags/1.8.4/tags/1.8/post-widget.php:88
-#: ../tags/1.8.4/trunk/post-widget.php:79 ../tags/1.8.5/post-widget.php:79
-#: ../tags/1.8.6/post-widget.php:79 ../tags/1.8/post-widget.php:88
-#: ../tags/1.9.2/post-widget.php:83 ../tags/1.9.4/post-widget.php:94
-#: ../tags/1.9.5/post-widget.php:94 ../tags/1.9.6/post-widget.php:97
-#: ../tags/1.9.7/post-widget.php:121 ../tags/1.9.8/post-widget.php:125
-#: ../tags/1.9/post-widget.php:83 ../tags/2.0.1/post-widget.php:115
-#: ../tags/2.0.2/post-widget.php:115 ../tags/2.0/post-widget.php:114
-#: ../tags/2.3.1/post-widget.php:115 ../tags/2.3.2/post-widget.php:115
-#: ../tags/2.3.3/post-widget.php:115 ../tags/2.3.4/post-widget.php:115
-#: ../tags/2.3.5/post-widget.php:120 ../tags/2.3/post-widget.php:115
-#: ../tags/2.4.1/post-widget.php:120 ../tags/2.4.2/post-widget.php:120
-#: ../tags/2.4.3/post-widget.php:120 ../tags/2.4.5/post-widget.php:120
-#: ../tags/2.5/post-widget.php:118 ../trunk/post-widget.php:121
-#: post-widget.php:121
-msgctxt "post type general name"
-msgid "Content Blocks"
-msgstr "Innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:85
-#: ../tags/1.1.1/custom-post-widget.php:85
-#: ../tags/1.1/custom-post-widget.php:85
-#: ../tags/1.2.1/custom-post-widget.php:101
-#: ../tags/1.2/custom-post-widget.php:106 ../tags/1.4/post-widget.php:92
-#: ../tags/1.5/post-widget.php:92 ../tags/1.6/post-widget.php:89
-#: ../tags/1.7/post-widget.php:89 ../tags/1.8.1/post-widget.php:89
-#: ../tags/1.8.3/post-widget.php:75
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:85
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:85
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:85
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:101
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:106
-#: ../tags/1.8.4/tags/1.4/post-widget.php:92
-#: ../tags/1.8.4/tags/1.5/post-widget.php:92
-#: ../tags/1.8.4/tags/1.6/post-widget.php:89
-#: ../tags/1.8.4/tags/1.7/post-widget.php:89
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:89
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:75
-#: ../tags/1.8.4/tags/1.8/post-widget.php:89
-#: ../tags/1.8.4/trunk/post-widget.php:80 ../tags/1.8.5/post-widget.php:80
-#: ../tags/1.8.6/post-widget.php:80 ../tags/1.8/post-widget.php:89
-#: ../tags/1.9.2/post-widget.php:84 ../tags/1.9.4/post-widget.php:95
-#: ../tags/1.9.5/post-widget.php:95 ../tags/1.9.6/post-widget.php:98
-#: ../tags/1.9.7/post-widget.php:122 ../tags/1.9.8/post-widget.php:126
-#: ../tags/1.9/post-widget.php:84 ../tags/2.0.1/post-widget.php:116
-#: ../tags/2.0.2/post-widget.php:116 ../tags/2.0/post-widget.php:115
-#: ../tags/2.3.1/post-widget.php:116 ../tags/2.3.2/post-widget.php:116
-#: ../tags/2.3.3/post-widget.php:116 ../tags/2.3.4/post-widget.php:116
-#: ../tags/2.3.5/post-widget.php:121 ../tags/2.3/post-widget.php:116
-#: ../tags/2.4.1/post-widget.php:121 ../tags/2.4.2/post-widget.php:121
-#: ../tags/2.4.3/post-widget.php:121 ../tags/2.4.5/post-widget.php:121
-#: ../tags/2.5/post-widget.php:119 ../trunk/post-widget.php:122
-#: post-widget.php:122
-msgctxt "post type singular name"
-msgid "Content Block"
-msgstr "Innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:86
-#: ../tags/1.1.1/custom-post-widget.php:86
-#: ../tags/1.1/custom-post-widget.php:86
-#: ../tags/1.2.1/custom-post-widget.php:102
-#: ../tags/1.2/custom-post-widget.php:107 ../tags/1.4/post-widget.php:94
-#: ../tags/1.5/post-widget.php:94 ../tags/1.6/post-widget.php:91
-#: ../tags/1.7/post-widget.php:91 ../tags/1.8.1/post-widget.php:91
-#: ../tags/1.8.3/post-widget.php:77
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:86
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:86
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:86
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:102
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:107
-#: ../tags/1.8.4/tags/1.4/post-widget.php:94
-#: ../tags/1.8.4/tags/1.5/post-widget.php:94
-#: ../tags/1.8.4/tags/1.6/post-widget.php:91
-#: ../tags/1.8.4/tags/1.7/post-widget.php:91
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:91
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:77
-#: ../tags/1.8.4/tags/1.8/post-widget.php:91
-#: ../tags/1.8.4/trunk/post-widget.php:82 ../tags/1.8.5/post-widget.php:82
-#: ../tags/1.8.6/post-widget.php:82 ../tags/1.8/post-widget.php:91
-#: ../tags/1.9.2/post-widget.php:86 ../tags/1.9.4/post-widget.php:97
-#: ../tags/1.9.5/post-widget.php:97 ../tags/1.9.6/post-widget.php:100
-#: ../tags/1.9.7/post-widget.php:124 ../tags/1.9.8/post-widget.php:128
-#: ../tags/1.9/post-widget.php:86 ../tags/2.0.1/post-widget.php:118
-#: ../tags/2.0.2/post-widget.php:118 ../tags/2.0/post-widget.php:117
-#: ../tags/2.3.1/post-widget.php:118 ../tags/2.3.2/post-widget.php:118
-#: ../tags/2.3.3/post-widget.php:118 ../tags/2.3.4/post-widget.php:118
-#: ../tags/2.3.5/post-widget.php:123 ../tags/2.3/post-widget.php:118
-#: ../tags/2.4.1/post-widget.php:123 ../tags/2.4.2/post-widget.php:123
-#: ../tags/2.4.3/post-widget.php:123 ../tags/2.4.5/post-widget.php:123
-#: ../tags/2.5/post-widget.php:121 ../trunk/post-widget.php:124
-#: post-widget.php:124
-msgctxt "block"
+#: popup.php:17 popup.php:18
 msgid "Add Content Block"
 msgstr "Lägg till innehållsblock"
 
 # @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:87
-#: ../tags/1.1.1/custom-post-widget.php:87
-#: ../tags/1.1/custom-post-widget.php:87
-#: ../tags/1.2.1/custom-post-widget.php:103
-#: ../tags/1.2/custom-post-widget.php:108 ../tags/1.4/post-widget.php:95
-#: ../tags/1.5/post-widget.php:95 ../tags/1.6/post-widget.php:92
-#: ../tags/1.7/post-widget.php:92 ../tags/1.8.1/post-widget.php:92
-#: ../tags/1.8.3/post-widget.php:78
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:87
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:87
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:87
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:103
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:108
-#: ../tags/1.8.4/tags/1.4/post-widget.php:95
-#: ../tags/1.8.4/tags/1.5/post-widget.php:95
-#: ../tags/1.8.4/tags/1.6/post-widget.php:92
-#: ../tags/1.8.4/tags/1.7/post-widget.php:92
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:92
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:78
-#: ../tags/1.8.4/tags/1.8/post-widget.php:92
-#: ../tags/1.8.4/trunk/post-widget.php:83 ../tags/1.8.5/post-widget.php:83
-#: ../tags/1.8.6/post-widget.php:83 ../tags/1.8/post-widget.php:92
-#: ../tags/1.9.2/post-widget.php:87 ../tags/1.9.3/post-widget.php:87
-#: ../tags/1.9.4/post-widget.php:98 ../tags/1.9.5/post-widget.php:98
-#: ../tags/1.9.6/post-widget.php:101 ../tags/1.9.7/post-widget.php:125
-#: ../tags/1.9.8/post-widget.php:129 ../tags/1.9/post-widget.php:87
-#: ../tags/2.0.1/post-widget.php:119 ../tags/2.0.2/post-widget.php:119
-#: ../tags/2.0/post-widget.php:118 ../tags/2.3.1/post-widget.php:119
-#: ../tags/2.3.2/post-widget.php:119 ../tags/2.3.3/post-widget.php:119
-#: ../tags/2.3.4/post-widget.php:119 ../tags/2.3.5/post-widget.php:124
-#: ../tags/2.3/post-widget.php:119 ../tags/2.4.1/post-widget.php:124
-#: ../tags/2.4.2/post-widget.php:124 ../tags/2.4.3/post-widget.php:124
-#: ../tags/2.4.5/post-widget.php:124 ../tags/2.5/post-widget.php:122
-#: ../trunk/post-widget.php:125 post-widget.php:125
-msgid "Add New Content Block"
-msgstr "Lägg till nytt innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:88
-#: ../tags/1.1.1/custom-post-widget.php:88
-#: ../tags/1.1/custom-post-widget.php:88
-#: ../tags/1.2.1/custom-post-widget.php:104
-#: ../tags/1.2/custom-post-widget.php:109 ../tags/1.4/post-widget.php:96
-#: ../tags/1.5/post-widget.php:96 ../tags/1.6/post-widget.php:93
-#: ../tags/1.7/post-widget.php:93 ../tags/1.8.1/post-widget.php:93
-#: ../tags/1.8.3/post-widget.php:79
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:88
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:88
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:88
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:104
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:109
-#: ../tags/1.8.4/tags/1.4/post-widget.php:96
-#: ../tags/1.8.4/tags/1.5/post-widget.php:96
-#: ../tags/1.8.4/tags/1.6/post-widget.php:93
-#: ../tags/1.8.4/tags/1.7/post-widget.php:93
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:93
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:79
-#: ../tags/1.8.4/tags/1.8/post-widget.php:93
-#: ../tags/1.8.4/trunk/post-widget.php:84 ../tags/1.8.5/post-widget.php:84
-#: ../tags/1.8.6/post-widget.php:84 ../tags/1.8/post-widget.php:93
-#: ../tags/1.9.2/post-widget.php:88 ../tags/1.9.3/post-widget.php:37
-#: ../tags/1.9.3/post-widget.php:88 ../tags/1.9.4/post-widget.php:39
-#: ../tags/1.9.4/post-widget.php:99 ../tags/1.9.5/post-widget.php:39
-#: ../tags/1.9.5/post-widget.php:99 ../tags/1.9.6/post-widget.php:42
-#: ../tags/1.9.6/post-widget.php:102 ../tags/1.9.7/post-widget.php:48
-#: ../tags/1.9.7/post-widget.php:126 ../tags/1.9.8/post-widget.php:48
-#: ../tags/1.9.8/post-widget.php:130 ../tags/1.9/post-widget.php:88
-#: ../tags/2.0.1/post-widget.php:52 ../tags/2.0.1/post-widget.php:120
-#: ../tags/2.0.2/post-widget.php:52 ../tags/2.0.2/post-widget.php:120
-#: ../tags/2.0/post-widget.php:52 ../tags/2.0/post-widget.php:119
-#: ../tags/2.3.1/post-widget.php:52 ../tags/2.3.1/post-widget.php:120
-#: ../tags/2.3.2/post-widget.php:52 ../tags/2.3.2/post-widget.php:120
-#: ../tags/2.3.3/post-widget.php:52 ../tags/2.3.3/post-widget.php:120
-#: ../tags/2.3.4/post-widget.php:52 ../tags/2.3.4/post-widget.php:120
-#: ../tags/2.3.5/post-widget.php:52 ../tags/2.3.5/post-widget.php:125
-#: ../tags/2.3/post-widget.php:52 ../tags/2.3/post-widget.php:120
-#: ../tags/2.4.1/post-widget.php:52 ../tags/2.4.1/post-widget.php:125
-#: ../tags/2.4.2/post-widget.php:52 ../tags/2.4.2/post-widget.php:125
-#: ../tags/2.4.3/post-widget.php:52 ../tags/2.4.3/post-widget.php:125
-#: ../tags/2.4.5/post-widget.php:52 ../tags/2.4.5/post-widget.php:125
-#: ../tags/2.5/post-widget.php:52 ../tags/2.5/post-widget.php:123
-#: ../trunk/post-widget.php:52 ../trunk/post-widget.php:126 post-widget.php:52
-#: post-widget.php:126
-msgid "Edit Content Block"
-msgstr "Redigera innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:89
-#: ../tags/1.1.1/custom-post-widget.php:89
-#: ../tags/1.1/custom-post-widget.php:89
-#: ../tags/1.2.1/custom-post-widget.php:105
-#: ../tags/1.2/custom-post-widget.php:110 ../tags/1.4/post-widget.php:97
-#: ../tags/1.5/post-widget.php:97 ../tags/1.6/post-widget.php:94
-#: ../tags/1.7/post-widget.php:94 ../tags/1.8.1/post-widget.php:94
-#: ../tags/1.8.3/post-widget.php:80
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:89
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:89
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:89
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:105
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:110
-#: ../tags/1.8.4/tags/1.4/post-widget.php:97
-#: ../tags/1.8.4/tags/1.5/post-widget.php:97
-#: ../tags/1.8.4/tags/1.6/post-widget.php:94
-#: ../tags/1.8.4/tags/1.7/post-widget.php:94
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:94
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:80
-#: ../tags/1.8.4/tags/1.8/post-widget.php:94
-#: ../tags/1.8.4/trunk/post-widget.php:85 ../tags/1.8.5/post-widget.php:85
-#: ../tags/1.8.6/post-widget.php:85 ../tags/1.8/post-widget.php:94
-#: ../tags/1.9.2/post-widget.php:89 ../tags/1.9.3/post-widget.php:89
-#: ../tags/1.9.4/post-widget.php:100 ../tags/1.9.5/post-widget.php:100
-#: ../tags/1.9.6/post-widget.php:103 ../tags/1.9.7/post-widget.php:127
-#: ../tags/1.9.8/post-widget.php:131 ../tags/1.9/post-widget.php:89
-#: ../tags/2.0.1/post-widget.php:121 ../tags/2.0.2/post-widget.php:121
-#: ../tags/2.0/post-widget.php:120 ../tags/2.3.1/post-widget.php:121
-#: ../tags/2.3.2/post-widget.php:121 ../tags/2.3.3/post-widget.php:121
-#: ../tags/2.3.4/post-widget.php:121 ../tags/2.3.5/post-widget.php:126
-#: ../tags/2.3/post-widget.php:121 ../tags/2.4.1/post-widget.php:126
-#: ../tags/2.4.2/post-widget.php:126 ../tags/2.4.3/post-widget.php:126
-#: ../tags/2.4.5/post-widget.php:126 ../tags/2.5/post-widget.php:124
-#: ../trunk/post-widget.php:127 post-widget.php:127
-msgid "New Content Block"
-msgstr "Nytt innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:90
-#: ../tags/1.1.1/custom-post-widget.php:90
-#: ../tags/1.1/custom-post-widget.php:90
-#: ../tags/1.2.1/custom-post-widget.php:106
-#: ../tags/1.2/custom-post-widget.php:111 ../tags/1.4/post-widget.php:98
-#: ../tags/1.5/post-widget.php:98 ../tags/1.6/post-widget.php:95
-#: ../tags/1.7/post-widget.php:95 ../tags/1.8.1/post-widget.php:95
-#: ../tags/1.8.3/post-widget.php:81
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:90
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:90
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:90
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:106
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:111
-#: ../tags/1.8.4/tags/1.4/post-widget.php:98
-#: ../tags/1.8.4/tags/1.5/post-widget.php:98
-#: ../tags/1.8.4/tags/1.6/post-widget.php:95
-#: ../tags/1.8.4/tags/1.7/post-widget.php:95
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:95
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:81
-#: ../tags/1.8.4/tags/1.8/post-widget.php:95
-#: ../tags/1.8.4/trunk/post-widget.php:86 ../tags/1.8.5/post-widget.php:86
-#: ../tags/1.8.6/post-widget.php:86 ../tags/1.8/post-widget.php:95
-#: ../tags/1.9.2/post-widget.php:90 ../tags/1.9.3/post-widget.php:90
-#: ../tags/1.9.4/post-widget.php:101 ../tags/1.9.5/post-widget.php:101
-#: ../tags/1.9.6/post-widget.php:104 ../tags/1.9.7/post-widget.php:128
-#: ../tags/1.9.8/post-widget.php:132 ../tags/1.9/post-widget.php:90
-#: ../tags/2.0.1/post-widget.php:122 ../tags/2.0.2/post-widget.php:122
-#: ../tags/2.0/post-widget.php:121 ../tags/2.3.1/post-widget.php:122
-#: ../tags/2.3.2/post-widget.php:122 ../tags/2.3.3/post-widget.php:122
-#: ../tags/2.3.4/post-widget.php:122 ../tags/2.3.5/post-widget.php:127
-#: ../tags/2.3/post-widget.php:122 ../tags/2.4.1/post-widget.php:127
-#: ../tags/2.4.2/post-widget.php:127 ../tags/2.4.3/post-widget.php:127
-#: ../tags/2.4.5/post-widget.php:127 ../tags/2.5/post-widget.php:125
-#: ../trunk/post-widget.php:128 post-widget.php:128
-msgid "View Content Block"
-msgstr "Visa innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:91
-#: ../tags/1.1.1/custom-post-widget.php:91
-#: ../tags/1.1/custom-post-widget.php:91
-#: ../tags/1.2.1/custom-post-widget.php:107
-#: ../tags/1.2/custom-post-widget.php:112 ../tags/1.4/post-widget.php:99
-#: ../tags/1.5/post-widget.php:99 ../tags/1.6/post-widget.php:96
-#: ../tags/1.7/post-widget.php:96 ../tags/1.8.1/post-widget.php:96
-#: ../tags/1.8.3/post-widget.php:82
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:91
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:91
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:91
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:107
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:112
-#: ../tags/1.8.4/tags/1.4/post-widget.php:99
-#: ../tags/1.8.4/tags/1.5/post-widget.php:99
-#: ../tags/1.8.4/tags/1.6/post-widget.php:96
-#: ../tags/1.8.4/tags/1.7/post-widget.php:96
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:96
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:82
-#: ../tags/1.8.4/tags/1.8/post-widget.php:96
-#: ../tags/1.8.4/trunk/post-widget.php:87 ../tags/1.8.5/post-widget.php:87
-#: ../tags/1.8.6/post-widget.php:87 ../tags/1.8/post-widget.php:96
-#: ../tags/1.9.2/post-widget.php:91 ../tags/1.9.3/post-widget.php:91
-#: ../tags/1.9.4/post-widget.php:102 ../tags/1.9.5/post-widget.php:102
-#: ../tags/1.9.6/post-widget.php:105 ../tags/1.9.7/post-widget.php:129
-#: ../tags/1.9.8/post-widget.php:133 ../tags/1.9/post-widget.php:91
-#: ../tags/2.0.1/post-widget.php:123 ../tags/2.0.2/post-widget.php:123
-#: ../tags/2.0/post-widget.php:122 ../tags/2.3.1/post-widget.php:123
-#: ../tags/2.3.2/post-widget.php:123 ../tags/2.3.3/post-widget.php:123
-#: ../tags/2.3.4/post-widget.php:123 ../tags/2.3.5/post-widget.php:128
-#: ../tags/2.3/post-widget.php:123 ../tags/2.4.1/post-widget.php:128
-#: ../tags/2.4.2/post-widget.php:128 ../tags/2.4.3/post-widget.php:128
-#: ../tags/2.4.5/post-widget.php:128 ../tags/2.5/post-widget.php:126
-#: ../trunk/post-widget.php:129 post-widget.php:129
-msgid "Search Content Blocks"
-msgstr "Sök bland innehållsblocken"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:92
-#: ../tags/1.1.1/custom-post-widget.php:92
-#: ../tags/1.1/custom-post-widget.php:92
-#: ../tags/1.2.1/custom-post-widget.php:108
-#: ../tags/1.2/custom-post-widget.php:113 ../tags/1.4/post-widget.php:100
-#: ../tags/1.5/post-widget.php:100 ../tags/1.6/post-widget.php:97
-#: ../tags/1.7/post-widget.php:97 ../tags/1.8.1/post-widget.php:97
-#: ../tags/1.8.3/post-widget.php:83
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:92
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:92
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:92
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:108
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:113
-#: ../tags/1.8.4/tags/1.4/post-widget.php:100
-#: ../tags/1.8.4/tags/1.5/post-widget.php:100
-#: ../tags/1.8.4/tags/1.6/post-widget.php:97
-#: ../tags/1.8.4/tags/1.7/post-widget.php:97
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:97
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:83
-#: ../tags/1.8.4/tags/1.8/post-widget.php:97
-#: ../tags/1.8.4/trunk/post-widget.php:88 ../tags/1.8.5/post-widget.php:88
-#: ../tags/1.8.6/post-widget.php:88 ../tags/1.8/post-widget.php:97
-#: ../tags/1.9.2/post-widget.php:92 ../tags/1.9.3/post-widget.php:92
-#: ../tags/1.9.4/post-widget.php:103 ../tags/1.9.5/post-widget.php:103
-#: ../tags/1.9.6/post-widget.php:106 ../tags/1.9.7/post-widget.php:130
-#: ../tags/1.9.8/post-widget.php:134 ../tags/1.9/post-widget.php:92
-#: ../tags/2.0.1/post-widget.php:124 ../tags/2.0.2/post-widget.php:124
-#: ../tags/2.0/post-widget.php:123 ../tags/2.3.1/post-widget.php:124
-#: ../tags/2.3.2/post-widget.php:124 ../tags/2.3.3/post-widget.php:124
-#: ../tags/2.3.4/post-widget.php:124 ../tags/2.3.5/post-widget.php:129
-#: ../tags/2.3/post-widget.php:124 ../tags/2.4.1/post-widget.php:129
-#: ../tags/2.4.2/post-widget.php:129 ../tags/2.4.3/post-widget.php:129
-#: ../tags/2.4.5/post-widget.php:129 ../tags/2.5/post-widget.php:127
-#: ../trunk/post-widget.php:130 post-widget.php:130
-msgid "No Content Blocks Found"
-msgstr "Det finns inga innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:93
-#: ../tags/1.1.1/custom-post-widget.php:93
-#: ../tags/1.1/custom-post-widget.php:93
-#: ../tags/1.2.1/custom-post-widget.php:109
-#: ../tags/1.2/custom-post-widget.php:114 ../tags/1.4/post-widget.php:101
-#: ../tags/1.5/post-widget.php:101 ../tags/1.6/post-widget.php:98
-#: ../tags/1.7/post-widget.php:98 ../tags/1.8.1/post-widget.php:98
-#: ../tags/1.8.3/post-widget.php:84
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:93
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:93
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:93
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:109
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:114
-#: ../tags/1.8.4/tags/1.4/post-widget.php:101
-#: ../tags/1.8.4/tags/1.5/post-widget.php:101
-#: ../tags/1.8.4/tags/1.6/post-widget.php:98
-#: ../tags/1.8.4/tags/1.7/post-widget.php:98
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:98
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:84
-#: ../tags/1.8.4/tags/1.8/post-widget.php:98
-#: ../tags/1.8.4/trunk/post-widget.php:89 ../tags/1.8.5/post-widget.php:89
-#: ../tags/1.8.6/post-widget.php:89 ../tags/1.8/post-widget.php:98
-#: ../tags/1.9.2/post-widget.php:93 ../tags/1.9.3/post-widget.php:93
-#: ../tags/1.9.4/post-widget.php:104 ../tags/1.9.5/post-widget.php:104
-#: ../tags/1.9.6/post-widget.php:107 ../tags/1.9.7/post-widget.php:131
-#: ../tags/1.9.8/post-widget.php:135 ../tags/1.9/post-widget.php:93
-#: ../tags/2.0.1/post-widget.php:125 ../tags/2.0.2/post-widget.php:125
-#: ../tags/2.0/post-widget.php:124 ../tags/2.3.1/post-widget.php:125
-#: ../tags/2.3.2/post-widget.php:125 ../tags/2.3.3/post-widget.php:125
-#: ../tags/2.3.4/post-widget.php:125 ../tags/2.3.5/post-widget.php:130
-#: ../tags/2.3/post-widget.php:125 ../tags/2.4.1/post-widget.php:130
-#: ../tags/2.4.2/post-widget.php:130 ../tags/2.4.3/post-widget.php:130
-#: ../tags/2.4.5/post-widget.php:130 ../tags/2.5/post-widget.php:128
-#: ../trunk/post-widget.php:131 post-widget.php:131
-msgid "No Content Blocks found in Trash"
-msgstr "Det finns inga innehållsblock i papperskorgen"
-
-#: ../tags/1.0/custom-post-widget.php:118
-#: ../tags/1.1.1/custom-post-widget.php:118
-#: ../tags/1.1/custom-post-widget.php:118
-#: ../tags/1.2.1/custom-post-widget.php:134
-#: ../tags/1.2/custom-post-widget.php:139 ../tags/1.4/post-widget.php:126
-#: ../tags/1.5/post-widget.php:145 ../tags/1.6/post-widget.php:141
-#: ../tags/1.7/post-widget.php:141 ../tags/1.8.1/post-widget.php:141
-#: ../tags/1.8.3/post-widget.php:125
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:118
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:118
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:118
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:134
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:139
-#: ../tags/1.8.4/tags/1.4/post-widget.php:126
-#: ../tags/1.8.4/tags/1.5/post-widget.php:145
-#: ../tags/1.8.4/tags/1.6/post-widget.php:141
-#: ../tags/1.8.4/tags/1.7/post-widget.php:141
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:141
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:125
-#: ../tags/1.8.4/tags/1.8/post-widget.php:141 ../tags/1.8/post-widget.php:141
-#, php-format
-msgid "Content Block updated. <a href=\"%s\">View Content Block</a>"
-msgstr "Innehållet Block uppdateras. <a href=\"%s\">Visa innehållsblock</a>"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:119
-#: ../tags/1.1.1/custom-post-widget.php:119
-#: ../tags/1.1/custom-post-widget.php:119
-#: ../tags/1.2.1/custom-post-widget.php:135
-#: ../tags/1.2/custom-post-widget.php:140 ../tags/1.4/post-widget.php:127
-#: ../tags/1.5/post-widget.php:146 ../tags/1.6/post-widget.php:142
-#: ../tags/1.7/post-widget.php:142 ../tags/1.8.1/post-widget.php:142
-#: ../tags/1.8.3/post-widget.php:126
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:119
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:119
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:119
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:135
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:140
-#: ../tags/1.8.4/tags/1.4/post-widget.php:127
-#: ../tags/1.8.4/tags/1.5/post-widget.php:146
-#: ../tags/1.8.4/tags/1.6/post-widget.php:142
-#: ../tags/1.8.4/tags/1.7/post-widget.php:142
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:142
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:126
-#: ../tags/1.8.4/tags/1.8/post-widget.php:142
-#: ../tags/1.8.4/trunk/post-widget.php:132 ../tags/1.8.5/post-widget.php:132
-#: ../tags/1.8.6/post-widget.php:132 ../tags/1.8/post-widget.php:142
-#: ../tags/1.9.2/post-widget.php:136 ../tags/1.9.3/post-widget.php:136
-#: ../tags/1.9.4/post-widget.php:147 ../tags/1.9.5/post-widget.php:147
-#: ../tags/1.9.6/post-widget.php:150 ../tags/1.9.7/post-widget.php:174
-#: ../tags/1.9.8/post-widget.php:178 ../tags/1.9/post-widget.php:136
-#: ../tags/2.0.1/post-widget.php:168 ../tags/2.0.2/post-widget.php:168
-#: ../tags/2.0/post-widget.php:167 ../tags/2.3.1/post-widget.php:168
-#: ../tags/2.3.2/post-widget.php:168 ../tags/2.3.3/post-widget.php:168
-#: ../tags/2.3.4/post-widget.php:168 ../tags/2.3.5/post-widget.php:173
-#: ../tags/2.3/post-widget.php:168 ../tags/2.4.1/post-widget.php:173
-#: ../tags/2.4.2/post-widget.php:173 ../tags/2.4.3/post-widget.php:173
-#: ../tags/2.4.5/post-widget.php:173 ../tags/2.5/post-widget.php:151
-#: ../trunk/post-widget.php:155 post-widget.php:155
-msgid "Custom field updated."
-msgstr "Det anpassade fältet är uppdaterat."
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:120
-#: ../tags/1.1.1/custom-post-widget.php:120
-#: ../tags/1.1/custom-post-widget.php:120
-#: ../tags/1.2.1/custom-post-widget.php:136
-#: ../tags/1.2/custom-post-widget.php:141 ../tags/1.4/post-widget.php:128
-#: ../tags/1.5/post-widget.php:147 ../tags/1.6/post-widget.php:143
-#: ../tags/1.7/post-widget.php:143 ../tags/1.8.1/post-widget.php:143
-#: ../tags/1.8.3/post-widget.php:127
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:120
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:120
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:120
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:136
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:141
-#: ../tags/1.8.4/tags/1.4/post-widget.php:128
-#: ../tags/1.8.4/tags/1.5/post-widget.php:147
-#: ../tags/1.8.4/tags/1.6/post-widget.php:143
-#: ../tags/1.8.4/tags/1.7/post-widget.php:143
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:143
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:127
-#: ../tags/1.8.4/tags/1.8/post-widget.php:143
-#: ../tags/1.8.4/trunk/post-widget.php:133 ../tags/1.8.5/post-widget.php:133
-#: ../tags/1.8.6/post-widget.php:133 ../tags/1.8/post-widget.php:143
-#: ../tags/1.9.2/post-widget.php:137 ../tags/1.9.3/post-widget.php:137
-#: ../tags/1.9.4/post-widget.php:148 ../tags/1.9.5/post-widget.php:148
-#: ../tags/1.9.6/post-widget.php:151 ../tags/1.9.7/post-widget.php:175
-#: ../tags/1.9.8/post-widget.php:179 ../tags/1.9/post-widget.php:137
-#: ../tags/2.0.1/post-widget.php:169 ../tags/2.0.2/post-widget.php:169
-#: ../tags/2.0/post-widget.php:168 ../tags/2.3.1/post-widget.php:169
-#: ../tags/2.3.2/post-widget.php:169 ../tags/2.3.3/post-widget.php:169
-#: ../tags/2.3.4/post-widget.php:169 ../tags/2.3.5/post-widget.php:174
-#: ../tags/2.3/post-widget.php:169 ../tags/2.4.1/post-widget.php:174
-#: ../tags/2.4.2/post-widget.php:174 ../tags/2.4.3/post-widget.php:174
-#: ../tags/2.4.5/post-widget.php:174 ../tags/2.5/post-widget.php:152
-#: ../trunk/post-widget.php:156 post-widget.php:156
-msgid "Custom field deleted."
-msgstr "Det anpassade fältet är borttaget."
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:121
-#: ../tags/1.1.1/custom-post-widget.php:121
-#: ../tags/1.1/custom-post-widget.php:121
-#: ../tags/1.2.1/custom-post-widget.php:137
-#: ../tags/1.2/custom-post-widget.php:142 ../tags/1.4/post-widget.php:129
-#: ../tags/1.5/post-widget.php:148 ../tags/1.6/post-widget.php:144
-#: ../tags/1.7/post-widget.php:144 ../tags/1.8.1/post-widget.php:144
-#: ../tags/1.8.3/post-widget.php:128
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:121
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:121
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:121
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:137
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:142
-#: ../tags/1.8.4/tags/1.4/post-widget.php:129
-#: ../tags/1.8.4/tags/1.5/post-widget.php:148
-#: ../tags/1.8.4/tags/1.6/post-widget.php:144
-#: ../tags/1.8.4/tags/1.7/post-widget.php:144
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:144
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:128
-#: ../tags/1.8.4/tags/1.8/post-widget.php:144
-#: ../tags/1.8.4/trunk/post-widget.php:131
-#: ../tags/1.8.4/trunk/post-widget.php:134 ../tags/1.8.5/post-widget.php:131
-#: ../tags/1.8.5/post-widget.php:134 ../tags/1.8.6/post-widget.php:131
-#: ../tags/1.8.6/post-widget.php:134 ../tags/1.8/post-widget.php:144
-#: ../tags/1.9.2/post-widget.php:135 ../tags/1.9.2/post-widget.php:138
-#: ../tags/1.9.3/post-widget.php:135 ../tags/1.9.3/post-widget.php:138
-#: ../tags/1.9.4/post-widget.php:146 ../tags/1.9.4/post-widget.php:149
-#: ../tags/1.9.5/post-widget.php:146 ../tags/1.9.5/post-widget.php:149
-#: ../tags/1.9.6/post-widget.php:149 ../tags/1.9.6/post-widget.php:152
-#: ../tags/1.9.7/post-widget.php:173 ../tags/1.9.7/post-widget.php:176
-#: ../tags/1.9.8/post-widget.php:177 ../tags/1.9.8/post-widget.php:180
-#: ../tags/1.9/post-widget.php:135 ../tags/1.9/post-widget.php:138
-#: ../tags/2.0.1/post-widget.php:167 ../tags/2.0.1/post-widget.php:170
-#: ../tags/2.0.2/post-widget.php:167 ../tags/2.0.2/post-widget.php:170
-#: ../tags/2.0/post-widget.php:166 ../tags/2.0/post-widget.php:169
-#: ../tags/2.3.1/post-widget.php:167 ../tags/2.3.1/post-widget.php:170
-#: ../tags/2.3.2/post-widget.php:167 ../tags/2.3.2/post-widget.php:170
-#: ../tags/2.3.3/post-widget.php:167 ../tags/2.3.3/post-widget.php:170
-#: ../tags/2.3.4/post-widget.php:167 ../tags/2.3.4/post-widget.php:170
-#: ../tags/2.3.5/post-widget.php:172 ../tags/2.3.5/post-widget.php:175
-#: ../tags/2.3/post-widget.php:167 ../tags/2.3/post-widget.php:170
-#: ../tags/2.4.1/post-widget.php:172 ../tags/2.4.1/post-widget.php:175
-#: ../tags/2.4.2/post-widget.php:172 ../tags/2.4.2/post-widget.php:175
-#: ../tags/2.4.3/post-widget.php:172 ../tags/2.4.3/post-widget.php:175
-#: ../tags/2.4.5/post-widget.php:172 ../tags/2.4.5/post-widget.php:175
-#: ../tags/2.5/post-widget.php:150 ../tags/2.5/post-widget.php:153
-#: ../trunk/post-widget.php:154 ../trunk/post-widget.php:157
-#: post-widget.php:154 post-widget.php:157
-msgid "Content Block updated."
-msgstr "Innehållsblocket är uppdaterat."
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:122
-#: ../tags/1.1.1/custom-post-widget.php:122
-#: ../tags/1.1/custom-post-widget.php:122
-#: ../tags/1.2.1/custom-post-widget.php:138
-#: ../tags/1.2/custom-post-widget.php:143 ../tags/1.4/post-widget.php:130
-#: ../tags/1.5/post-widget.php:149 ../tags/1.6/post-widget.php:145
-#: ../tags/1.7/post-widget.php:145 ../tags/1.8.1/post-widget.php:145
-#: ../tags/1.8.3/post-widget.php:129
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:122
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:122
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:122
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:138
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:143
-#: ../tags/1.8.4/tags/1.4/post-widget.php:130
-#: ../tags/1.8.4/tags/1.5/post-widget.php:149
-#: ../tags/1.8.4/tags/1.6/post-widget.php:145
-#: ../tags/1.8.4/tags/1.7/post-widget.php:145
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:145
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:129
-#: ../tags/1.8.4/tags/1.8/post-widget.php:145
-#: ../tags/1.8.4/trunk/post-widget.php:135 ../tags/1.8.5/post-widget.php:135
-#: ../tags/1.8.6/post-widget.php:135 ../tags/1.8/post-widget.php:145
-#: ../tags/1.9.2/post-widget.php:139 ../tags/1.9.3/post-widget.php:139
-#: ../tags/1.9.4/post-widget.php:150 ../tags/1.9.5/post-widget.php:150
-#: ../tags/1.9.6/post-widget.php:153 ../tags/1.9.7/post-widget.php:177
-#: ../tags/1.9.8/post-widget.php:181 ../tags/1.9/post-widget.php:139
-#: ../tags/2.0.1/post-widget.php:171 ../tags/2.0.2/post-widget.php:171
-#: ../tags/2.0/post-widget.php:170 ../tags/2.3.1/post-widget.php:171
-#: ../tags/2.3.2/post-widget.php:171 ../tags/2.3.3/post-widget.php:171
-#: ../tags/2.3.4/post-widget.php:171 ../tags/2.3.5/post-widget.php:176
-#: ../tags/2.3/post-widget.php:171 ../tags/2.4.1/post-widget.php:176
-#: ../tags/2.4.2/post-widget.php:176 ../tags/2.4.3/post-widget.php:176
-#: ../tags/2.4.5/post-widget.php:176 ../tags/2.5/post-widget.php:154
-#: ../trunk/post-widget.php:158 post-widget.php:158
-#, php-format
-msgid "Content Block restored to revision from %s"
-msgstr "Innehållsblocket är återställt från en tidigare sparad version från %s"
-
-#: ../tags/1.0/custom-post-widget.php:123
-#: ../tags/1.1.1/custom-post-widget.php:123
-#: ../tags/1.1/custom-post-widget.php:123
-#: ../tags/1.2.1/custom-post-widget.php:139
-#: ../tags/1.2/custom-post-widget.php:144 ../tags/1.4/post-widget.php:131
-#: ../tags/1.5/post-widget.php:150 ../tags/1.6/post-widget.php:146
-#: ../tags/1.7/post-widget.php:146 ../tags/1.8.1/post-widget.php:146
-#: ../tags/1.8.3/post-widget.php:130
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:123
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:123
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:123
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:139
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:144
-#: ../tags/1.8.4/tags/1.4/post-widget.php:131
-#: ../tags/1.8.4/tags/1.5/post-widget.php:150
-#: ../tags/1.8.4/tags/1.6/post-widget.php:146
-#: ../tags/1.8.4/tags/1.7/post-widget.php:146
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:146
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:130
-#: ../tags/1.8.4/tags/1.8/post-widget.php:146 ../tags/1.8/post-widget.php:146
-#, php-format
-msgid "Content Block published. <a href=\"%s\">View Content Block</a>"
-msgstr "Innehåll Block publiceras. <a href=\"%s\">Se innehåll Block</a>"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:124
-#: ../tags/1.1.1/custom-post-widget.php:124
-#: ../tags/1.1/custom-post-widget.php:124
-#: ../tags/1.2.1/custom-post-widget.php:140
-#: ../tags/1.2/custom-post-widget.php:145 ../tags/1.4/post-widget.php:132
-#: ../tags/1.5/post-widget.php:151 ../tags/1.6/post-widget.php:147
-#: ../tags/1.7/post-widget.php:147 ../tags/1.8.1/post-widget.php:147
-#: ../tags/1.8.3/post-widget.php:131
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:124
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:124
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:124
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:140
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:145
-#: ../tags/1.8.4/tags/1.4/post-widget.php:132
-#: ../tags/1.8.4/tags/1.5/post-widget.php:151
-#: ../tags/1.8.4/tags/1.6/post-widget.php:147
-#: ../tags/1.8.4/tags/1.7/post-widget.php:147
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:147
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:131
-#: ../tags/1.8.4/tags/1.8/post-widget.php:147
-#: ../tags/1.8.4/trunk/post-widget.php:137 ../tags/1.8.5/post-widget.php:137
-#: ../tags/1.8.6/post-widget.php:137 ../tags/1.8/post-widget.php:147
-#: ../tags/1.9.2/post-widget.php:141 ../tags/1.9.3/post-widget.php:141
-#: ../tags/1.9.4/post-widget.php:152 ../tags/1.9.5/post-widget.php:152
-#: ../tags/1.9.6/post-widget.php:155 ../tags/1.9.7/post-widget.php:179
-#: ../tags/1.9.8/post-widget.php:183 ../tags/1.9/post-widget.php:141
-#: ../tags/2.0.1/post-widget.php:173 ../tags/2.0.2/post-widget.php:173
-#: ../tags/2.0/post-widget.php:172 ../tags/2.3.1/post-widget.php:173
-#: ../tags/2.3.2/post-widget.php:173 ../tags/2.3.3/post-widget.php:173
-#: ../tags/2.3.4/post-widget.php:173 ../tags/2.3.5/post-widget.php:178
-#: ../tags/2.3/post-widget.php:173 ../tags/2.4.1/post-widget.php:178
-#: ../tags/2.4.2/post-widget.php:178 ../tags/2.4.3/post-widget.php:178
-#: ../tags/2.4.5/post-widget.php:178 ../tags/2.5/post-widget.php:156
-#: ../trunk/post-widget.php:160 post-widget.php:160
-msgid "Block saved."
-msgstr "Blocket är sparat."
-
-#: ../tags/1.0/custom-post-widget.php:125
-#: ../tags/1.1.1/custom-post-widget.php:125
-#: ../tags/1.1/custom-post-widget.php:125
-#: ../tags/1.2.1/custom-post-widget.php:141
-#: ../tags/1.2/custom-post-widget.php:146 ../tags/1.4/post-widget.php:133
-#: ../tags/1.5/post-widget.php:152 ../tags/1.6/post-widget.php:148
-#: ../tags/1.7/post-widget.php:148 ../tags/1.8.1/post-widget.php:148
-#: ../tags/1.8.3/post-widget.php:132
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:125
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:125
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:125
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:141
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:146
-#: ../tags/1.8.4/tags/1.4/post-widget.php:133
-#: ../tags/1.8.4/tags/1.5/post-widget.php:152
-#: ../tags/1.8.4/tags/1.6/post-widget.php:148
-#: ../tags/1.8.4/tags/1.7/post-widget.php:148
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:148
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:132
-#: ../tags/1.8.4/tags/1.8/post-widget.php:148 ../tags/1.8/post-widget.php:148
-#, php-format
-msgid ""
-"Content Block submitted. <a target=\"_blank\" href=\"%s\">Preview Content "
-"Block</a>"
-msgstr ""
-"Innehåll Block in. <a target=\"_blank\" href=\"%s\">Förhandsgranska innehåll "
-"Block</a>"
-
-#: ../tags/1.0/custom-post-widget.php:126
-#: ../tags/1.1.1/custom-post-widget.php:126
-#: ../tags/1.1/custom-post-widget.php:126
-#: ../tags/1.2.1/custom-post-widget.php:142
-#: ../tags/1.2/custom-post-widget.php:147 ../tags/1.4/post-widget.php:134
-#: ../tags/1.5/post-widget.php:153 ../tags/1.6/post-widget.php:149
-#: ../tags/1.7/post-widget.php:149 ../tags/1.8.1/post-widget.php:149
-#: ../tags/1.8.3/post-widget.php:133
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:126
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:126
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:126
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:142
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:147
-#: ../tags/1.8.4/tags/1.4/post-widget.php:134
-#: ../tags/1.8.4/tags/1.5/post-widget.php:153
-#: ../tags/1.8.4/tags/1.6/post-widget.php:149
-#: ../tags/1.8.4/tags/1.7/post-widget.php:149
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:149
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:133
-#: ../tags/1.8.4/tags/1.8/post-widget.php:149 ../tags/1.8/post-widget.php:149
-#, php-format
-msgid ""
-"Content Block scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
-"href=\"%2$s\">Preview block</a>"
-msgstr ""
-"Innehållsblock planeras <strong>för.%1$s</strong> <a target=\"_blank\" href="
-"\"%2$s\">Preview-block</a>"
-
-# @ custom-post-widget
-#: ../tags/1.0/custom-post-widget.php:127
-#: ../tags/1.1.1/custom-post-widget.php:127
-#: ../tags/1.1/custom-post-widget.php:127
-#: ../tags/1.2.1/custom-post-widget.php:143
-#: ../tags/1.2/custom-post-widget.php:148 ../tags/1.4/post-widget.php:135
-#: ../tags/1.5/post-widget.php:154 ../tags/1.6/post-widget.php:150
-#: ../tags/1.7/post-widget.php:149 ../tags/1.8.1/post-widget.php:149
-#: ../tags/1.8.3/post-widget.php:133
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:127
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:127
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:127
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:143
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:148
-#: ../tags/1.8.4/tags/1.4/post-widget.php:135
-#: ../tags/1.8.4/tags/1.5/post-widget.php:154
-#: ../tags/1.8.4/tags/1.6/post-widget.php:150
-#: ../tags/1.8.4/tags/1.7/post-widget.php:149
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:149
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:133
-#: ../tags/1.8.4/tags/1.8/post-widget.php:149
-#: ../tags/1.8.4/trunk/post-widget.php:139 ../tags/1.8.5/post-widget.php:139
-#: ../tags/1.8.6/post-widget.php:139 ../tags/1.8/post-widget.php:149
-#: ../tags/1.9.2/post-widget.php:143 ../tags/1.9.3/post-widget.php:143
-#: ../tags/1.9.4/post-widget.php:154 ../tags/1.9.5/post-widget.php:154
-#: ../tags/1.9.6/post-widget.php:157 ../tags/1.9.7/post-widget.php:181
-#: ../tags/1.9.8/post-widget.php:185 ../tags/1.9/post-widget.php:143
-#: ../tags/2.0.1/post-widget.php:175 ../tags/2.0.2/post-widget.php:175
-#: ../tags/2.0/post-widget.php:174 ../tags/2.3.1/post-widget.php:175
-#: ../tags/2.3.2/post-widget.php:175 ../tags/2.3.3/post-widget.php:175
-#: ../tags/2.3.4/post-widget.php:175 ../tags/2.3.5/post-widget.php:180
-#: ../tags/2.3/post-widget.php:175 ../tags/2.4.1/post-widget.php:180
-#: ../tags/2.4.2/post-widget.php:180 ../tags/2.4.3/post-widget.php:180
-#: ../tags/2.4.5/post-widget.php:180 ../tags/2.5/post-widget.php:158
-#: ../trunk/post-widget.php:162 post-widget.php:162
-msgid "M j, Y @ G:i"
-msgstr "Y-M-J @ H:i"
-
-#: ../tags/1.0/custom-post-widget.php:128
-#: ../tags/1.1.1/custom-post-widget.php:128
-#: ../tags/1.1/custom-post-widget.php:128
-#: ../tags/1.2.1/custom-post-widget.php:144
-#: ../tags/1.2/custom-post-widget.php:149 ../tags/1.4/post-widget.php:136
-#: ../tags/1.5/post-widget.php:155 ../tags/1.6/post-widget.php:151
-#: ../tags/1.7/post-widget.php:150 ../tags/1.8.1/post-widget.php:150
-#: ../tags/1.8.3/post-widget.php:134
-#: ../tags/1.8.4/tags/1.0/custom-post-widget.php:128
-#: ../tags/1.8.4/tags/1.1.1/custom-post-widget.php:128
-#: ../tags/1.8.4/tags/1.1/custom-post-widget.php:128
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:144
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:149
-#: ../tags/1.8.4/tags/1.4/post-widget.php:136
-#: ../tags/1.8.4/tags/1.5/post-widget.php:155
-#: ../tags/1.8.4/tags/1.6/post-widget.php:151
-#: ../tags/1.8.4/tags/1.7/post-widget.php:150
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:150
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:134
-#: ../tags/1.8.4/tags/1.8/post-widget.php:150 ../tags/1.8/post-widget.php:150
-#, php-format
-msgid ""
-"Content Block draft updated. <a target=\"_blank\" href=\"%s\">Preview "
-"Content Block</a>"
-msgstr ""
-"Innehållsblock utkast uppdateras. <a target=\"_blank\" href=\"%s"
-"\">Förhandsvisningsinnehållsblock</a>"
-
-# @ custom-post-widget
-#: ../tags/1.2.1/custom-post-widget.php:49
-#: ../tags/1.2/custom-post-widget.php:54 ../tags/1.4/post-widget.php:42
-#: ../tags/1.5/post-widget.php:42 ../tags/1.6/post-widget.php:42
-#: ../tags/1.7/post-widget.php:42 ../tags/1.8.1/post-widget.php:42
-#: ../tags/1.8.3/post-widget.php:36
-#: ../tags/1.8.4/tags/1.2.1/custom-post-widget.php:49
-#: ../tags/1.8.4/tags/1.2/custom-post-widget.php:54
-#: ../tags/1.8.4/tags/1.4/post-widget.php:42
-#: ../tags/1.8.4/tags/1.5/post-widget.php:42
-#: ../tags/1.8.4/tags/1.6/post-widget.php:42
-#: ../tags/1.8.4/tags/1.7/post-widget.php:42
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:42
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:36
-#: ../tags/1.8.4/tags/1.8/post-widget.php:42
-#: ../tags/1.8.4/trunk/post-widget.php:45 ../tags/1.8.5/post-widget.php:45
-#: ../tags/1.8.6/post-widget.php:45 ../tags/1.8/post-widget.php:42
-#: ../tags/1.9.2/post-widget.php:45 ../tags/1.9.3/post-widget.php:45
-#: ../tags/1.9.4/post-widget.php:47 ../tags/1.9.5/post-widget.php:47
-#: ../tags/1.9.6/post-widget.php:50 ../tags/1.9.7/post-widget.php:56
-#: ../tags/1.9.8/post-widget.php:56 ../tags/1.9/post-widget.php:45
-#: ../tags/2.0.1/post-widget.php:58 ../tags/2.0.2/post-widget.php:58
-#: ../tags/2.0/post-widget.php:58 ../tags/2.3.1/post-widget.php:58
-#: ../tags/2.3.2/post-widget.php:58 ../tags/2.3.3/post-widget.php:58
-#: ../tags/2.3.4/post-widget.php:58 ../tags/2.3.5/post-widget.php:58
-#: ../tags/2.3/post-widget.php:58 ../tags/2.4.1/post-widget.php:58
-#: ../tags/2.4.2/post-widget.php:58 ../tags/2.4.3/post-widget.php:58
-#: ../tags/2.4.5/post-widget.php:58 ../tags/2.5/post-widget.php:58
-#: ../trunk/post-widget.php:58 post-widget.php:58
-msgid "Show Post Title"
-msgstr "Visa inläggets rubrik"
-
-# @ custom-post-widget
-#: ../tags/1.4/post-widget.php:31 ../tags/1.5/post-widget.php:31
-#: ../tags/1.6/post-widget.php:31 ../tags/1.7/post-widget.php:31
-#: ../tags/1.8.1/popup.php:38 ../tags/1.8.1/post-widget.php:31
-#: ../tags/1.8.3/popup.php:43 ../tags/1.8.3/post-widget.php:27
-#: ../tags/1.8.4/tags/1.4/post-widget.php:31
-#: ../tags/1.8.4/tags/1.5/post-widget.php:31
-#: ../tags/1.8.4/tags/1.6/post-widget.php:31
-#: ../tags/1.8.4/tags/1.7/post-widget.php:31
-#: ../tags/1.8.4/tags/1.8.1/popup.php:38
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:31
-#: ../tags/1.8.4/tags/1.8.3/popup.php:43
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:27
-#: ../tags/1.8.4/tags/1.8/popup.php:38
-#: ../tags/1.8.4/tags/1.8/post-widget.php:31 ../tags/1.8.4/trunk/popup.php:43
-#: ../tags/1.8.4/trunk/post-widget.php:27 ../tags/1.8.5/popup.php:43
-#: ../tags/1.8.5/post-widget.php:27 ../tags/1.8.6/popup.php:43
-#: ../tags/1.8.6/post-widget.php:27 ../tags/1.8/popup.php:38
-#: ../tags/1.8/post-widget.php:31 ../tags/1.9.2/popup.php:43
-#: ../tags/1.9.2/post-widget.php:27 ../tags/1.9.3/popup.php:43
-#: ../tags/1.9.3/post-widget.php:27 ../tags/1.9.4/popup.php:43
-#: ../tags/1.9.4/post-widget.php:29 ../tags/1.9.5/popup.php:43
-#: ../tags/1.9.5/post-widget.php:29 ../tags/1.9.6/popup.php:43
-#: ../tags/1.9.6/post-widget.php:32 ../tags/1.9.7/popup.php:43
-#: ../tags/1.9.7/post-widget.php:38 ../tags/1.9.8/popup.php:47
-#: ../tags/1.9.8/post-widget.php:38 ../tags/1.9/popup.php:43
-#: ../tags/1.9/post-widget.php:27 ../tags/2.0.1/popup.php:37
-#: ../tags/2.0.1/post-widget.php:41 ../tags/2.0.2/popup.php:37
-#: ../tags/2.0.2/post-widget.php:41 ../tags/2.0/popup.php:37
-#: ../tags/2.0/post-widget.php:41 ../tags/2.3.1/popup.php:37
-#: ../tags/2.3.1/post-widget.php:41 ../tags/2.3.2/popup.php:37
-#: ../tags/2.3.2/post-widget.php:41 ../tags/2.3.3/popup.php:37
-#: ../tags/2.3.3/post-widget.php:41 ../tags/2.3.4/popup.php:37
-#: ../tags/2.3.4/post-widget.php:41 ../tags/2.3.5/popup.php:37
-#: ../tags/2.3.5/post-widget.php:41 ../tags/2.3/popup.php:37
-#: ../tags/2.3/post-widget.php:41 ../tags/2.4.1/popup.php:37
-#: ../tags/2.4.1/post-widget.php:41 ../tags/2.4.2/popup.php:37
-#: ../tags/2.4.2/post-widget.php:41 ../tags/2.4.3/popup.php:37
-#: ../tags/2.4.3/post-widget.php:41 ../tags/2.4.5/popup.php:40
-#: ../tags/2.4.5/post-widget.php:41 ../tags/2.5/popup.php:57
-#: ../tags/2.5/post-widget.php:41 ../trunk/popup.php:58
-#: ../trunk/post-widget.php:41 popup.php:58 post-widget.php:41
-msgid "No content blocks available"
-msgstr "Det finns inget innehållsblock tillgängligt"
-
-# @ custom-post-widget
-#: ../tags/1.4/post-widget.php:61 ../tags/1.5/post-widget.php:61
-#: ../tags/1.6/post-widget.php:61 ../tags/1.7/post-widget.php:61
-#: ../tags/1.8.1/post-widget.php:61 ../tags/1.8.3/post-widget.php:50
-#: ../tags/1.8.4/tags/1.4/post-widget.php:61
-#: ../tags/1.8.4/tags/1.5/post-widget.php:61
-#: ../tags/1.8.4/tags/1.6/post-widget.php:61
-#: ../tags/1.8.4/tags/1.7/post-widget.php:61
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:61
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:50
-#: ../tags/1.8.4/tags/1.8/post-widget.php:61
-#: ../tags/1.8.4/trunk/post-widget.php:58 ../tags/1.8.5/post-widget.php:58
-#: ../tags/1.8.6/post-widget.php:58 ../tags/1.8/post-widget.php:61
-#: ../tags/1.9.2/post-widget.php:58 ../tags/1.9.3/post-widget.php:58
-#: ../tags/1.9.4/post-widget.php:66 ../tags/1.9.5/post-widget.php:66
-#: ../tags/1.9.6/post-widget.php:69 ../tags/1.9.7/post-widget.php:81
-#: ../tags/1.9.8/post-widget.php:81 ../tags/1.9/post-widget.php:58
-#: ../tags/2.0.1/post-widget.php:84 ../tags/2.0.2/post-widget.php:84
-#: ../tags/2.0/post-widget.php:83 ../tags/2.3.1/post-widget.php:84
-#: ../tags/2.3.2/post-widget.php:84 ../tags/2.3.3/post-widget.php:84
-#: ../tags/2.3.4/post-widget.php:84 ../tags/2.3.5/post-widget.php:84
-#: ../tags/2.3/post-widget.php:84 ../tags/2.4.1/post-widget.php:84
-#: ../tags/2.4.2/post-widget.php:84 ../tags/2.4.3/post-widget.php:84
-#: ../tags/2.4.5/post-widget.php:84 ../tags/2.5/post-widget.php:84
-#: ../trunk/post-widget.php:84 post-widget.php:84
-msgid "Find"
-msgstr "Hitta"
-
-# @ custom-post-widget
-#: ../tags/1.4/post-widget.php:93 ../tags/1.5/post-widget.php:93
-#: ../tags/1.6/post-widget.php:90 ../tags/1.7/post-widget.php:90
-#: ../tags/1.8.1/post-widget.php:90 ../tags/1.8.3/post-widget.php:76
-#: ../tags/1.8.4/tags/1.4/post-widget.php:93
-#: ../tags/1.8.4/tags/1.5/post-widget.php:93
-#: ../tags/1.8.4/tags/1.6/post-widget.php:90
-#: ../tags/1.8.4/tags/1.7/post-widget.php:90
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:90
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:76
-#: ../tags/1.8.4/tags/1.8/post-widget.php:90
-#: ../tags/1.8.4/trunk/post-widget.php:81 ../tags/1.8.5/post-widget.php:81
-#: ../tags/1.8.6/post-widget.php:81 ../tags/1.8/post-widget.php:90
-#: ../tags/1.9.2/post-widget.php:85 ../tags/1.9.4/post-widget.php:96
-#: ../tags/1.9.5/post-widget.php:96 ../tags/1.9.6/post-widget.php:99
-#: ../tags/1.9.7/post-widget.php:123 ../tags/1.9.8/post-widget.php:127
-#: ../tags/1.9/post-widget.php:85 ../tags/2.0.1/post-widget.php:117
-#: ../tags/2.0.2/post-widget.php:117 ../tags/2.0/post-widget.php:116
-#: ../tags/2.3.1/post-widget.php:117 ../tags/2.3.2/post-widget.php:117
-#: ../tags/2.3.3/post-widget.php:117 ../tags/2.3.4/post-widget.php:117
-#: ../tags/2.3.5/post-widget.php:122 ../tags/2.3/post-widget.php:117
-#: ../tags/2.4.1/post-widget.php:122 ../tags/2.4.2/post-widget.php:122
-#: ../tags/2.4.3/post-widget.php:122 ../tags/2.4.5/post-widget.php:122
-#: ../tags/2.5/post-widget.php:120 ../trunk/post-widget.php:123
-#: post-widget.php:123
-msgctxt "post type plural name"
-msgid "Content Blocks"
-msgstr "Innehållsblock"
-
-# @ custom-post-widget
-#: ../tags/1.8.1/popup.php:9 ../tags/1.8.3/popup.php:9
-#: ../tags/1.8.4/tags/1.8.1/popup.php:9 ../tags/1.8.4/tags/1.8.3/popup.php:9
-#: ../tags/1.8.4/tags/1.8/popup.php:9 ../tags/1.8.4/trunk/popup.php:9
-#: ../tags/1.8.5/popup.php:9 ../tags/1.8.6/popup.php:9 ../tags/1.8/popup.php:9
-#: ../tags/1.9.2/popup.php:9 ../tags/1.9.3/popup.php:9
-#: ../tags/1.9.4/popup.php:9 ../tags/1.9.5/popup.php:9
-#: ../tags/1.9.6/popup.php:9 ../tags/1.9.7/popup.php:9
-#: ../tags/1.9.8/popup.php:9 ../tags/1.9/popup.php:9 ../tags/2.0.1/popup.php:9
-#: ../tags/2.0.2/popup.php:9 ../tags/2.0/popup.php:9 ../tags/2.3.1/popup.php:9
-#: ../tags/2.3.2/popup.php:9 ../tags/2.3.3/popup.php:9
-#: ../tags/2.3.4/popup.php:9 ../tags/2.3.5/popup.php:9 ../tags/2.3/popup.php:9
-#: ../tags/2.4.1/popup.php:9 ../tags/2.4.2/popup.php:9
-#: ../tags/2.4.3/popup.php:9 ../tags/2.4.5/popup.php:12
-#: ../tags/2.5/popup.php:30 ../trunk/popup.php:31 popup.php:31
+#: popup.php:31
 msgid "Please select a Content Block"
 msgstr "Välj ett innehållsblock"
 
 # @ custom-post-widget
-#: ../tags/1.8.1/popup.php:22 ../tags/1.8.3/popup.php:22
-#: ../tags/1.8.3/popup.php:48 ../tags/1.8.4/tags/1.8.1/popup.php:22
-#: ../tags/1.8.4/tags/1.8.3/popup.php:22 ../tags/1.8.4/tags/1.8.3/popup.php:48
-#: ../tags/1.8.4/tags/1.8/popup.php:22 ../tags/1.8.4/trunk/popup.php:22
-#: ../tags/1.8.4/trunk/popup.php:48 ../tags/1.8.5/popup.php:22
-#: ../tags/1.8.5/popup.php:48 ../tags/1.8.6/popup.php:22
-#: ../tags/1.8.6/popup.php:48 ../tags/1.8/popup.php:22
-#: ../tags/1.9.2/popup.php:22 ../tags/1.9.2/popup.php:48
-#: ../tags/1.9.3/popup.php:22 ../tags/1.9.3/popup.php:48
-#: ../tags/1.9.4/popup.php:22 ../tags/1.9.4/popup.php:48
-#: ../tags/1.9.5/popup.php:22 ../tags/1.9.5/popup.php:48
-#: ../tags/1.9.6/popup.php:22 ../tags/1.9.6/popup.php:48
-#: ../tags/1.9.7/popup.php:22 ../tags/1.9.7/popup.php:48
-#: ../tags/1.9.8/popup.php:22 ../tags/1.9.8/popup.php:52
-#: ../tags/1.9/popup.php:22 ../tags/1.9/popup.php:48 ../tags/2.0.1/popup.php:19
-#: ../tags/2.0.1/popup.php:43 ../tags/2.0.2/popup.php:19
-#: ../tags/2.0.2/popup.php:43 ../tags/2.0/popup.php:19 ../tags/2.0/popup.php:43
-#: ../tags/2.3.1/popup.php:19 ../tags/2.3.1/popup.php:43
-#: ../tags/2.3.2/popup.php:19 ../tags/2.3.2/popup.php:43
-#: ../tags/2.3.3/popup.php:19 ../tags/2.3.3/popup.php:43
-#: ../tags/2.3.4/popup.php:19 ../tags/2.3.4/popup.php:43
-#: ../tags/2.3.5/popup.php:19 ../tags/2.3.5/popup.php:43
-#: ../tags/2.3/popup.php:19 ../tags/2.3/popup.php:43 ../tags/2.4.1/popup.php:19
-#: ../tags/2.4.1/popup.php:43 ../tags/2.4.2/popup.php:19
-#: ../tags/2.4.2/popup.php:43 ../tags/2.4.3/popup.php:19
-#: ../tags/2.4.3/popup.php:43 ../tags/2.4.5/popup.php:22
-#: ../tags/2.4.5/popup.php:46 ../tags/2.5/popup.php:39 ../tags/2.5/popup.php:63
-#: ../trunk/popup.php:40 ../trunk/popup.php:64 popup.php:40 popup.php:64
+#: popup.php:40 popup.php:64
 msgid "Insert Content Block"
 msgstr "Lägg till innehållsblock"
 
 # @ custom-post-widget
-#: ../tags/1.8.1/popup.php:23 ../tags/1.8.3/popup.php:25
-#: ../tags/1.8.4/tags/1.8.1/popup.php:23 ../tags/1.8.4/tags/1.8.3/popup.php:25
-#: ../tags/1.8.4/tags/1.8/popup.php:23 ../tags/1.8.4/trunk/popup.php:25
-#: ../tags/1.8.5/popup.php:25 ../tags/1.8.6/popup.php:25
-#: ../tags/1.8/popup.php:23 ../tags/1.9.2/popup.php:25
-#: ../tags/1.9.3/popup.php:25 ../tags/1.9.4/popup.php:25
-#: ../tags/1.9.5/popup.php:25 ../tags/1.9.6/popup.php:25
-#: ../tags/1.9.7/popup.php:25 ../tags/1.9.8/popup.php:25
-#: ../tags/1.9/popup.php:25 ../tags/2.0.1/popup.php:22
-#: ../tags/2.0.2/popup.php:22 ../tags/2.0/popup.php:22
-#: ../tags/2.3.1/popup.php:22 ../tags/2.3.2/popup.php:22
-#: ../tags/2.3.3/popup.php:22 ../tags/2.3.4/popup.php:22
-#: ../tags/2.3.5/popup.php:22 ../tags/2.3/popup.php:22
-#: ../tags/2.4.1/popup.php:22 ../tags/2.4.2/popup.php:22
-#: ../tags/2.4.3/popup.php:22 ../tags/2.4.5/popup.php:25
-#: ../tags/2.5/popup.php:42 ../trunk/popup.php:43 popup.php:43
+#: popup.php:43
 msgid "Select a Content Block below to add it to your post or page."
 msgstr ""
 "Välj ett innehållsblock nedan för att lägga till det på din sida eller "
 "inlägg."
 
 # @ custom-post-widget
-#: ../tags/1.8.1/popup.php:27 ../tags/1.8.3/popup.php:31
-#: ../tags/1.8.4/tags/1.8.1/popup.php:27 ../tags/1.8.4/tags/1.8.3/popup.php:31
-#: ../tags/1.8.4/tags/1.8/popup.php:27 ../tags/1.8.4/trunk/popup.php:31
-#: ../tags/1.8.5/popup.php:31 ../tags/1.8.6/popup.php:31
-#: ../tags/1.8/popup.php:27 ../tags/1.9.2/popup.php:31
-#: ../tags/1.9.3/popup.php:31 ../tags/1.9.4/popup.php:31
-#: ../tags/1.9.5/popup.php:31 ../tags/1.9.6/popup.php:31
-#: ../tags/1.9.7/popup.php:31 ../tags/1.9.8/popup.php:31
-#: ../tags/1.9/popup.php:31 ../tags/2.0.1/popup.php:27
-#: ../tags/2.0.2/popup.php:27 ../tags/2.0/popup.php:27
-#: ../tags/2.3.1/popup.php:27 ../tags/2.3.2/popup.php:27
-#: ../tags/2.3.3/popup.php:27 ../tags/2.3.4/popup.php:27
-#: ../tags/2.3.5/popup.php:27 ../tags/2.3/popup.php:27
-#: ../tags/2.4.1/popup.php:27 ../tags/2.4.2/popup.php:27
-#: ../tags/2.4.3/popup.php:27 ../tags/2.4.5/popup.php:30
-#: ../tags/2.5/popup.php:47 ../trunk/popup.php:48 popup.php:48
+#: popup.php:48
 msgid "Select a Content Block"
 msgstr "Välj ett innehållsblock"
 
-#: ../tags/1.8.1/popup.php:45 ../tags/1.8.3/popup.php:50
-#: ../tags/1.8.4/tags/1.8.1/popup.php:45 ../tags/1.8.4/tags/1.8.3/popup.php:50
-#: ../tags/1.8.4/tags/1.8/popup.php:45 ../tags/1.8.4/trunk/popup.php:50
-#: ../tags/1.8.5/popup.php:50 ../tags/1.8.6/popup.php:50
-#: ../tags/1.8/popup.php:45 ../tags/1.9.2/popup.php:50
-#: ../tags/1.9.3/popup.php:50 ../tags/1.9.4/popup.php:50
-#: ../tags/1.9.5/popup.php:50 ../tags/1.9.6/popup.php:50
-#: ../tags/1.9.7/popup.php:50 ../tags/1.9.8/popup.php:54
-#: ../tags/1.9/popup.php:50
-msgid "Cancel"
-msgstr "Avbryt svar"
+# @ custom-post-widget
+#: popup.php:58 post-widget.php:41
+msgid "No content blocks available"
+msgstr "Det finns inget innehållsblock tillgängligt"
 
 # @ custom-post-widget
-#: ../tags/1.8.1/post-widget.php:186 ../tags/1.8.1/post-widget.php:187
-#: ../tags/1.8.3/post-widget.php:169 ../tags/1.8.3/post-widget.php:170
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:186
-#: ../tags/1.8.4/tags/1.8.1/post-widget.php:187
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:169
-#: ../tags/1.8.4/tags/1.8.3/post-widget.php:170
-#: ../tags/1.8.4/tags/1.8/post-widget.php:186
-#: ../tags/1.8.4/tags/1.8/post-widget.php:187
-#: ../tags/1.8.4/trunk/post-widget.php:175
-#: ../tags/1.8.4/trunk/post-widget.php:176 ../tags/1.8.5/post-widget.php:175
-#: ../tags/1.8.5/post-widget.php:176 ../tags/1.8.6/post-widget.php:175
-#: ../tags/1.8.6/post-widget.php:176 ../tags/1.8/post-widget.php:186
-#: ../tags/1.8/post-widget.php:187 ../tags/1.9.2/post-widget.php:180
-#: ../tags/1.9.2/post-widget.php:181 ../tags/1.9.3/post-widget.php:86
-#: ../tags/1.9.3/post-widget.php:180 ../tags/1.9.3/post-widget.php:181
-#: ../tags/1.9.4/post-widget.php:191 ../tags/1.9.4/post-widget.php:192
-#: ../tags/1.9.5/post-widget.php:191 ../tags/1.9.5/post-widget.php:192
-#: ../tags/1.9.6/post-widget.php:194 ../tags/1.9.6/post-widget.php:195
-#: ../tags/1.9.7/post-widget.php:218 ../tags/1.9.7/post-widget.php:219
-#: ../tags/1.9.8/post-widget.php:222 ../tags/1.9.8/post-widget.php:223
-#: ../tags/1.9/post-widget.php:180 ../tags/1.9/post-widget.php:181
-#: ../tags/2.0.1/post-widget.php:223 ../tags/2.0.1/post-widget.php:224
-#: ../tags/2.0.2/post-widget.php:223 ../tags/2.0.2/post-widget.php:224
-#: ../tags/2.0/post-widget.php:222 ../tags/2.0/post-widget.php:223
-#: ../tags/2.3.1/post-widget.php:223 ../tags/2.3.1/post-widget.php:224
-#: ../tags/2.3.2/post-widget.php:223 ../tags/2.3.2/post-widget.php:224
-#: ../tags/2.3.3/post-widget.php:223 ../tags/2.3.3/post-widget.php:224
-#: ../tags/2.3.4/post-widget.php:223 ../tags/2.3.4/post-widget.php:224
-#: ../tags/2.3.5/post-widget.php:228 ../tags/2.3.5/post-widget.php:229
-#: ../tags/2.3/post-widget.php:223 ../tags/2.3/post-widget.php:224
-#: ../tags/2.4.1/post-widget.php:228 ../tags/2.4.1/post-widget.php:229
-#: ../tags/2.4.2/post-widget.php:228 ../tags/2.4.2/post-widget.php:229
-#: ../tags/2.4.3/post-widget.php:228 ../tags/2.4.3/post-widget.php:229
-#: ../tags/2.4.5/post-widget.php:228 ../tags/2.4.5/post-widget.php:229
-#: ../tags/2.5/popup.php:17 ../tags/2.5/popup.php:18 ../trunk/popup.php:17
-#: ../trunk/popup.php:18 popup.php:17 popup.php:18
+#: post-widget.php:11
+msgid "Displays custom post content in a widget"
+msgstr "Lägg till innehållsblock i en widget"
+
+# @ custom-post-widget
+#: post-widget.php:12
+msgid "Content Block"
+msgstr "Innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:26
+msgid "Content Block to Display:"
+msgstr "Välj innehållsblock att visa:"
+
+# @ custom-post-widget
+#: post-widget.php:52 post-widget.php:126
+msgid "Edit Content Block"
+msgstr "Redigera innehållsblock"
+
+#: post-widget.php:58
+msgid "Show post title"
+msgstr "Visa inlägg titel"
+
+# @ custom-post-widget
+#: post-widget.php:63
+msgid "Show featured image"
+msgstr "Visa utvald bild"
+
+# @ custom-post-widget
+#: post-widget.php:68
+msgid "Do not apply content filters"
+msgstr "Använd inte innehållsfilter"
+
+# @ custom-post-widget
+#: post-widget.php:84
+msgid "Find"
+msgstr "Hitta"
+
+# @ custom-post-widget
+#: post-widget.php:121
+msgctxt "post type general name"
+msgid "Content Blocks"
+msgstr "Innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:122
+msgctxt "post type singular name"
+msgid "Content Block"
+msgstr "Innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:123
+msgctxt "post type plural name"
+msgid "Content Blocks"
+msgstr "Innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:124
+msgctxt "block"
 msgid "Add Content Block"
 msgstr "Lägg till innehållsblock"
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:131 ../tags/1.8.5/post-widget.php:131
-#: ../tags/1.8.6/post-widget.php:131 ../tags/1.9.2/post-widget.php:135
-#: ../tags/1.9.3/post-widget.php:135 ../tags/1.9.4/post-widget.php:146
-#: ../tags/1.9.5/post-widget.php:146 ../tags/1.9.6/post-widget.php:149
-#: ../tags/1.9.7/post-widget.php:173 ../tags/1.9.8/post-widget.php:177
-#: ../tags/1.9/post-widget.php:135 ../tags/2.0.1/post-widget.php:167
-#: ../tags/2.0.2/post-widget.php:167 ../tags/2.0/post-widget.php:166
-#: ../tags/2.3.1/post-widget.php:167 ../tags/2.3.2/post-widget.php:167
-#: ../tags/2.3.3/post-widget.php:167 ../tags/2.3.4/post-widget.php:167
-#: ../tags/2.3.5/post-widget.php:172 ../tags/2.3/post-widget.php:167
-#: ../tags/2.4.1/post-widget.php:172 ../tags/2.4.2/post-widget.php:172
-#: ../tags/2.4.3/post-widget.php:172 ../tags/2.4.5/post-widget.php:172
-#: ../tags/2.5/post-widget.php:150 ../trunk/post-widget.php:154
+#: post-widget.php:125
+msgid "Add New Content Block"
+msgstr "Lägg till nytt innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:127
+msgid "New Content Block"
+msgstr "Nytt innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:128
+msgid "View Content Block"
+msgstr "Visa innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:129
+msgid "Search Content Blocks"
+msgstr "Sök bland innehållsblocken"
+
+# @ custom-post-widget
+#: post-widget.php:130
+msgid "No Content Blocks Found"
+msgstr "Det finns inga innehållsblock"
+
+# @ custom-post-widget
+#: post-widget.php:131
+msgid "No Content Blocks found in Trash"
+msgstr "Det finns inga innehållsblock i papperskorgen"
+
+# @ custom-post-widget
 #: post-widget.php:154
 #, php-format
 msgid "Content Block updated. <a href=\"%s\">Manage Widgets</a>"
 msgstr "Innehållsblocket är uppdaterat. <a href=\"%s\">Hantera widgets</a>"
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:136 ../tags/1.8.5/post-widget.php:136
-#: ../tags/1.8.6/post-widget.php:136 ../tags/1.9.2/post-widget.php:140
-#: ../tags/1.9.3/post-widget.php:140 ../tags/1.9.4/post-widget.php:151
-#: ../tags/1.9.5/post-widget.php:151 ../tags/1.9.6/post-widget.php:154
-#: ../tags/1.9.7/post-widget.php:178 ../tags/1.9.8/post-widget.php:182
-#: ../tags/1.9/post-widget.php:140 ../tags/2.0.1/post-widget.php:172
-#: ../tags/2.0.2/post-widget.php:172 ../tags/2.0/post-widget.php:171
-#: ../tags/2.3.1/post-widget.php:172 ../tags/2.3.2/post-widget.php:172
-#: ../tags/2.3.3/post-widget.php:172 ../tags/2.3.4/post-widget.php:172
-#: ../tags/2.3.5/post-widget.php:177 ../tags/2.3/post-widget.php:172
-#: ../tags/2.4.1/post-widget.php:177 ../tags/2.4.2/post-widget.php:177
-#: ../tags/2.4.3/post-widget.php:177 ../tags/2.4.5/post-widget.php:177
-#: ../tags/2.5/post-widget.php:155 ../trunk/post-widget.php:159
+#: post-widget.php:154 post-widget.php:157
+msgid "Content Block updated."
+msgstr "Innehållsblocket är uppdaterat."
+
+# @ custom-post-widget
+#: post-widget.php:155
+msgid "Custom field updated."
+msgstr "Det anpassade fältet är uppdaterat."
+
+# @ custom-post-widget
+#: post-widget.php:156
+msgid "Custom field deleted."
+msgstr "Det anpassade fältet är borttaget."
+
+# @ custom-post-widget
+#: post-widget.php:158
+#, php-format
+msgid "Content Block restored to revision from %s"
+msgstr "Innehållsblocket är återställt från en tidigare sparad version från %s"
+
+# @ custom-post-widget
 #: post-widget.php:159
 #, php-format
 msgid "Content Block published. <a href=\"%s\">Manage Widgets</a>"
 msgstr "Innehållsblocket är publicerat. <a href=\"%s\">Hantera widgets</a>"
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:136 ../tags/1.8.5/post-widget.php:136
-#: ../tags/1.8.6/post-widget.php:136 ../tags/1.9.2/post-widget.php:140
-#: ../tags/1.9.3/post-widget.php:140 ../tags/1.9.4/post-widget.php:151
-#: ../tags/1.9.5/post-widget.php:151 ../tags/1.9.6/post-widget.php:154
-#: ../tags/1.9.7/post-widget.php:178 ../tags/1.9.8/post-widget.php:182
-#: ../tags/1.9/post-widget.php:140 ../tags/2.0.1/post-widget.php:172
-#: ../tags/2.0.2/post-widget.php:172 ../tags/2.0/post-widget.php:171
-#: ../tags/2.3.1/post-widget.php:172 ../tags/2.3.2/post-widget.php:172
-#: ../tags/2.3.3/post-widget.php:172 ../tags/2.3.4/post-widget.php:172
-#: ../tags/2.3.5/post-widget.php:177 ../tags/2.3/post-widget.php:172
-#: ../tags/2.4.1/post-widget.php:177 ../tags/2.4.2/post-widget.php:177
-#: ../tags/2.4.3/post-widget.php:177 ../tags/2.4.5/post-widget.php:177
-#: ../tags/2.5/post-widget.php:155 ../trunk/post-widget.php:159
 #: post-widget.php:159
 msgid "Content Block published."
 msgstr "Innehållsblocket är publicerat."
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:138 ../tags/1.8.5/post-widget.php:138
-#: ../tags/1.8.6/post-widget.php:138 ../tags/1.9.2/post-widget.php:142
-#: ../tags/1.9.3/post-widget.php:142 ../tags/1.9.4/post-widget.php:153
-#: ../tags/1.9.5/post-widget.php:153 ../tags/1.9.6/post-widget.php:156
-#: ../tags/1.9.7/post-widget.php:180 ../tags/1.9.8/post-widget.php:184
-#: ../tags/1.9/post-widget.php:142 ../tags/2.0.1/post-widget.php:174
-#: ../tags/2.0.2/post-widget.php:174 ../tags/2.0/post-widget.php:173
-#: ../tags/2.3.1/post-widget.php:174 ../tags/2.3.2/post-widget.php:174
-#: ../tags/2.3.3/post-widget.php:174 ../tags/2.3.4/post-widget.php:174
-#: ../tags/2.3.5/post-widget.php:179 ../tags/2.3/post-widget.php:174
-#: ../tags/2.4.1/post-widget.php:179 ../tags/2.4.2/post-widget.php:179
-#: ../tags/2.4.3/post-widget.php:179 ../tags/2.4.5/post-widget.php:179
-#: ../tags/2.5/post-widget.php:157 ../trunk/post-widget.php:161
+#: post-widget.php:160
+msgid "Block saved."
+msgstr "Blocket är sparat."
+
+# @ custom-post-widget
 #: post-widget.php:161
 #, php-format
 msgid "Content Block submitted. <a href=\"%s\">Manage Widgets</a>"
 msgstr "Innehållsblocket är skickat. <a href=\"%s\">Hantera widgets</a>"
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:138 ../tags/1.8.5/post-widget.php:138
-#: ../tags/1.8.6/post-widget.php:138 ../tags/1.9.2/post-widget.php:142
-#: ../tags/1.9.3/post-widget.php:142 ../tags/1.9.4/post-widget.php:153
-#: ../tags/1.9.5/post-widget.php:153 ../tags/1.9.6/post-widget.php:156
-#: ../tags/1.9.7/post-widget.php:180 ../tags/1.9.8/post-widget.php:184
-#: ../tags/1.9/post-widget.php:142 ../tags/2.0.1/post-widget.php:174
-#: ../tags/2.0.2/post-widget.php:174 ../tags/2.0/post-widget.php:173
-#: ../tags/2.3.1/post-widget.php:174 ../tags/2.3.2/post-widget.php:174
-#: ../tags/2.3.3/post-widget.php:174 ../tags/2.3.4/post-widget.php:174
-#: ../tags/2.3.5/post-widget.php:179 ../tags/2.3/post-widget.php:174
-#: ../tags/2.4.1/post-widget.php:179 ../tags/2.4.2/post-widget.php:179
-#: ../tags/2.4.3/post-widget.php:179 ../tags/2.4.5/post-widget.php:179
-#: ../tags/2.5/post-widget.php:157 ../trunk/post-widget.php:161
 #: post-widget.php:161
 msgid "Content Block submitted."
 msgstr "Innehållsblocket är skickat."
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:139 ../tags/1.8.5/post-widget.php:139
-#: ../tags/1.8.6/post-widget.php:139 ../tags/1.9.2/post-widget.php:143
-#: ../tags/1.9.3/post-widget.php:143 ../tags/1.9.4/post-widget.php:154
-#: ../tags/1.9.5/post-widget.php:154 ../tags/1.9.6/post-widget.php:157
-#: ../tags/1.9.7/post-widget.php:181 ../tags/1.9.8/post-widget.php:185
-#: ../tags/1.9/post-widget.php:143 ../tags/2.0.1/post-widget.php:175
-#: ../tags/2.0.2/post-widget.php:175 ../tags/2.0/post-widget.php:174
-#: ../tags/2.3.1/post-widget.php:175 ../tags/2.3.2/post-widget.php:175
-#: ../tags/2.3.3/post-widget.php:175 ../tags/2.3.4/post-widget.php:175
-#: ../tags/2.3.5/post-widget.php:180 ../tags/2.3/post-widget.php:175
-#: ../tags/2.4.1/post-widget.php:180 ../tags/2.4.2/post-widget.php:180
-#: ../tags/2.4.3/post-widget.php:180 ../tags/2.4.5/post-widget.php:180
-#: ../tags/2.5/post-widget.php:158 ../trunk/post-widget.php:162
 #: post-widget.php:162
 #, php-format
 msgid "Content Block scheduled for: <strong>%1$s</strong>."
 msgstr "Innehållsblocket är schemalagt för publicering: <strong>%1$s</strong>."
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:140 ../tags/1.8.5/post-widget.php:140
-#: ../tags/1.8.6/post-widget.php:140 ../tags/1.9.2/post-widget.php:144
-#: ../tags/1.9.3/post-widget.php:144 ../tags/1.9.4/post-widget.php:155
-#: ../tags/1.9.5/post-widget.php:155 ../tags/1.9.6/post-widget.php:158
-#: ../tags/1.9.7/post-widget.php:182 ../tags/1.9.8/post-widget.php:186
-#: ../tags/1.9/post-widget.php:144 ../tags/2.0.1/post-widget.php:176
-#: ../tags/2.0.2/post-widget.php:176 ../tags/2.0/post-widget.php:175
-#: ../tags/2.3.1/post-widget.php:176 ../tags/2.3.2/post-widget.php:176
-#: ../tags/2.3.3/post-widget.php:176 ../tags/2.3.4/post-widget.php:176
-#: ../tags/2.3.5/post-widget.php:181 ../tags/2.3/post-widget.php:176
-#: ../tags/2.4.1/post-widget.php:181 ../tags/2.4.2/post-widget.php:181
-#: ../tags/2.4.3/post-widget.php:181 ../tags/2.4.5/post-widget.php:181
-#: ../tags/2.5/post-widget.php:159 ../trunk/post-widget.php:163
+#: post-widget.php:162
+msgid "M j, Y @ G:i"
+msgstr "Y-M-J @ H:i"
+
+# @ custom-post-widget
 #: post-widget.php:163
 #, php-format
 msgid "Content Block draft updated. <a href=\"%s\">Manage Widgets</a>"
@@ -1315,79 +255,88 @@ msgstr ""
 "Innehållsblockets utkast är uppdaterat. <a href=\"%s\">Hantera widgets</a>"
 
 # @ custom-post-widget
-#: ../tags/1.8.4/trunk/post-widget.php:140 ../tags/1.8.5/post-widget.php:140
-#: ../tags/1.8.6/post-widget.php:140 ../tags/1.9.2/post-widget.php:144
-#: ../tags/1.9.3/post-widget.php:144 ../tags/1.9.4/post-widget.php:155
-#: ../tags/1.9.5/post-widget.php:155 ../tags/1.9.6/post-widget.php:158
-#: ../tags/1.9.7/post-widget.php:182 ../tags/1.9.8/post-widget.php:186
-#: ../tags/1.9/post-widget.php:144 ../tags/2.0.1/post-widget.php:176
-#: ../tags/2.0.2/post-widget.php:176 ../tags/2.0/post-widget.php:175
-#: ../tags/2.3.1/post-widget.php:176 ../tags/2.3.2/post-widget.php:176
-#: ../tags/2.3.3/post-widget.php:176 ../tags/2.3.4/post-widget.php:176
-#: ../tags/2.3.5/post-widget.php:181 ../tags/2.3/post-widget.php:176
-#: ../tags/2.4.1/post-widget.php:181 ../tags/2.4.2/post-widget.php:181
-#: ../tags/2.4.3/post-widget.php:181 ../tags/2.4.5/post-widget.php:181
-#: ../tags/2.5/post-widget.php:159 ../trunk/post-widget.php:163
 #: post-widget.php:163
 msgid "Content Block draft updated."
 msgstr "Innehållsblockets utkast är uppdaterat."
 
-#: ../tags/1.9.3/post-widget.php:83 ../tags/1.9.3/post-widget.php:85
-msgid "Content Blocks"
-msgstr "Innehållsblock"
+#. Plugin Name of the plugin/theme
+msgid "Custom Post Widget"
+msgstr "Innehållsblocken"
 
-# @ custom-post-widget
-#: ../tags/1.9.4/post-widget.php:52 ../tags/1.9.5/post-widget.php:52
-#: ../tags/1.9.6/post-widget.php:55 ../tags/1.9.7/post-widget.php:66
-#: ../tags/1.9.8/post-widget.php:66 ../tags/2.0.1/post-widget.php:68
-#: ../tags/2.0.2/post-widget.php:68 ../tags/2.0/post-widget.php:68
-#: ../tags/2.3.1/post-widget.php:68 ../tags/2.3.2/post-widget.php:68
-#: ../tags/2.3.3/post-widget.php:68 ../tags/2.3.4/post-widget.php:68
-#: ../tags/2.3.5/post-widget.php:68 ../tags/2.3/post-widget.php:68
-#: ../tags/2.4.1/post-widget.php:68 ../tags/2.4.2/post-widget.php:68
-#: ../tags/2.4.3/post-widget.php:68 ../tags/2.4.5/post-widget.php:68
-#: ../tags/2.5/post-widget.php:68 ../trunk/post-widget.php:68
-#: post-widget.php:68
-msgid "Do not apply content filters"
-msgstr "Använd inte innehållsfilter"
-
-#: ../tags/1.9.7/post-widget.php:61
-msgid "Show Featured Image"
-msgstr "Visa utvald bild"
-
-# @ custom-post-widget
-#: ../tags/1.9.8/post-widget.php:61 ../tags/2.0.1/post-widget.php:63
-#: ../tags/2.0.2/post-widget.php:63 ../tags/2.0/post-widget.php:63
-#: ../tags/2.3.1/post-widget.php:63 ../tags/2.3.2/post-widget.php:63
-#: ../tags/2.3.3/post-widget.php:63 ../tags/2.3.4/post-widget.php:63
-#: ../tags/2.3.5/post-widget.php:63 ../tags/2.3/post-widget.php:63
-#: ../tags/2.4.1/post-widget.php:63 ../tags/2.4.2/post-widget.php:63
-#: ../tags/2.4.3/post-widget.php:63 ../tags/2.4.5/post-widget.php:63
-#: ../tags/2.5/post-widget.php:63 ../trunk/post-widget.php:63
-#: post-widget.php:63
-msgid "Show featured image"
-msgstr "Visa utvald bild"
-
-# @ custom-post-widget
-#: ../tags/2.4.1/meta-box.php:6 ../tags/2.4.2/meta-box.php:6
-#: ../tags/2.4.3/meta-box.php:6 ../tags/2.4.5/meta-box.php:6
-#: ../tags/2.5/meta-box.php:6 ../tags/2.5/meta-box.php:47
-#: ../trunk/meta-box.php:6 ../trunk/meta-box.php:47 meta-box.php:6
-#: meta-box.php:47
-msgid "Content Block Information"
-msgstr "Information om innehållsblocket"
-
-#: ../trunk/notice.php:11 notice.php:11
-#, php-format
+#. Plugin URI of the plugin/theme
 msgid ""
-"Thank you for using the Custom Post Widget plugin. Visit the <a href="
-"\"http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?"
-"utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget\" "
-"target=\"_blank\">plugin website</a> to find out more about using this "
-"plugin. <a href=\"%1$s\" style=\"float:right;\">Hide Notice</a>"
+"http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?"
+"utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget"
 msgstr ""
-"Tack för att du använder Custom Post Widget plugin. Besök <a href=\"http://"
-"www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?"
-"utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget\" "
-"target=\"_blank\">plugin webbplats</a> att ta reda på mer om hur du använder "
-"denna plugin. <a href=\"%1$s\" style=\"float:right;\">Göm Meddelande</a>"
+"http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?"
+"utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget"
+
+#. Description of the plugin/theme
+msgid ""
+"Show the content of a custom post of the type 'content_block' in a widget or "
+"with a shortcode."
+msgstr ""
+"Visa innehållet i en anpassad post av typen \"content_block\" i en widget "
+"eller med en kortkod."
+
+#. Author of the plugin/theme
+msgid "Johan van der Wijk"
+msgstr "Johan van der Wijk"
+
+#. Author URI of the plugin/theme
+msgid "http://vanderwijk.nl"
+msgstr "http://vanderwijk.nl"
+
+#~ msgid "Content Block updated. <a href=\"%s\">View Content Block</a>"
+#~ msgstr "Innehållet Block uppdateras. <a href=\"%s\">Visa innehållsblock</a>"
+
+#~ msgid "Content Block published. <a href=\"%s\">View Content Block</a>"
+#~ msgstr "Innehåll Block publiceras. <a href=\"%s\">Se innehåll Block</a>"
+
+#~ msgid ""
+#~ "Content Block submitted. <a target=\"_blank\" href=\"%s\">Preview Content "
+#~ "Block</a>"
+#~ msgstr ""
+#~ "Innehåll Block in. <a target=\"_blank\" href=\"%s\">Förhandsgranska "
+#~ "innehåll Block</a>"
+
+#~ msgid ""
+#~ "Content Block scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" "
+#~ "href=\"%2$s\">Preview block</a>"
+#~ msgstr ""
+#~ "Innehållsblock planeras <strong>för.%1$s</strong> <a target=\"_blank\" "
+#~ "href=\"%2$s\">Preview-block</a>"
+
+#~ msgid ""
+#~ "Content Block draft updated. <a target=\"_blank\" href=\"%s\">Preview "
+#~ "Content Block</a>"
+#~ msgstr ""
+#~ "Innehållsblock utkast uppdateras. <a target=\"_blank\" href=\"%s"
+#~ "\">Förhandsvisningsinnehållsblock</a>"
+
+# @ custom-post-widget
+#~ msgid "Show Post Title"
+#~ msgstr "Visa inläggets rubrik"
+
+#~ msgid "Cancel"
+#~ msgstr "Avbryt svar"
+
+#~ msgid "Content Blocks"
+#~ msgstr "Innehållsblock"
+
+#~ msgid "Show Featured Image"
+#~ msgstr "Visa utvald bild"
+
+#~ msgid ""
+#~ "Thank you for using the Custom Post Widget plugin. Visit the <a href="
+#~ "\"http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?"
+#~ "utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget\" "
+#~ "target=\"_blank\">plugin website</a> to find out more about using this "
+#~ "plugin. <a href=\"%1$s\" style=\"float:right;\">Hide Notice</a>"
+#~ msgstr ""
+#~ "Tack för att du använder Custom Post Widget plugin. Besök <a href="
+#~ "\"http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?"
+#~ "utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget\" "
+#~ "target=\"_blank\">plugin webbplats</a> att ta reda på mer om hur du "
+#~ "använder denna plugin. <a href=\"%1$s\" style=\"float:right;\">Göm "
+#~ "Meddelande</a>"
