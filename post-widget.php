@@ -1,7 +1,7 @@
 <?php
 
 // Add featured image support
-if ( function_exists( 'add_theme_support' ) ) { 
+if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'post-thumbnails' );
 }
 
@@ -44,7 +44,7 @@ class custom_post_widget extends WP_Widget {
 				</select>
 			</label>
 		</p>
-		
+
 		<input type="hidden" id="<?php echo $this -> get_field_id( 'title' ); ?>" name="<?php echo $this -> get_field_name( 'title' ); ?>" value="<?php if ( !empty( $widgetExtraTitle ) ) { echo $widgetExtraTitle; } ?>" />
 
 		<p>
@@ -66,7 +66,7 @@ class custom_post_widget extends WP_Widget {
 		<p>
 			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['apply_content_filters'] ), true ); ?> id="<?php echo $this->get_field_id( 'apply_content_filters' ); ?>" name="<?php echo $this->get_field_name( 'apply_content_filters' ); ?>" />
 			<label for="<?php echo $this->get_field_id( 'apply_content_filters' ); ?>"><?php echo __( 'Do not apply content filters', 'custom-post-widget' ) ?></label>
-		</p> <?php 
+		</p> <?php
 	}
 
 	function update( $new_instance, $old_instance ) {
@@ -83,7 +83,7 @@ class custom_post_widget extends WP_Widget {
 		extract($args);
 		$custom_post_id  = ( $instance['custom_post_id'] != '' ) ? esc_attr($instance['custom_post_id']) : __( 'Find', 'custom-post-widget' );
 		// Add support for WPML Plugin.
-		if ( function_exists( 'icl_object_id' ) ){ 
+		if ( function_exists( 'icl_object_id' ) ){
 			$custom_post_id = icl_object_id( $custom_post_id, 'content_block', true );
 		}
 		// Variables from the widget settings.
@@ -104,7 +104,7 @@ class custom_post_widget extends WP_Widget {
 			}
 			echo $before_widget;
 			if ( $show_custom_post_title ) {
-				echo $before_title . apply_filters( 'widget_title',$content_post->post_title) . $after_title; // This is the line that displays the title (only if show title is set) 
+				echo $before_title . apply_filters( 'widget_title',$content_post->post_title) . $after_title; // This is the line that displays the title (only if show title is set)
 			}
 			if ( $show_featured_image ) {
 				echo get_the_post_thumbnail( $content_post -> ID );
@@ -150,7 +150,7 @@ add_action( 'init', 'cpw_post_type_init' );
 
 function content_block_messages( $messages ) {
 	$messages['content_block'] = array(
-		0 => '', 
+		0 => '',
 		1 => current_user_can( 'edit_theme_options' ) ? sprintf( __( 'Content Block updated. <a href="%s">Manage Widgets</a>', 'custom-post-widget' ), esc_url( 'widgets.php' ) ) : sprintf( __( 'Content Block updated.', 'custom-post-widget' ), esc_url( 'widgets.php' ) ),
 		2 => __( 'Custom field updated.', 'custom-post-widget' ),
 		3 => __( 'Custom field deleted.', 'custom-post-widget' ),
@@ -173,8 +173,8 @@ function custom_post_widget_shortcode( $atts ) {
 		'slug' => '',
 		'class' => 'content_block',
 		'suppress_content_filters' => 'no',
-        'title' => 'no',
-        'title_tag' => 'h3'
+		'title' => 'no',
+		'title_tag' => 'h3'
 	), $atts ) );
 
 	if ( $slug ) {
@@ -185,7 +185,7 @@ function custom_post_widget_shortcode( $atts ) {
 	}
 
 	$content = "";
-	
+
 	if( $id != "" ) {
 		$args = array(
 			'post__in' => array( $id ),
@@ -197,12 +197,12 @@ function custom_post_widget_shortcode( $atts ) {
 		foreach( $content_post as $post ) :
 			$content .= '<div class="'. esc_attr($class) .'" id="custom_post_widget-' . $id . '">';
 			if ( $title === 'yes' ) {
-				$content .= '<' . esc_attr( $title_tag ) . '>' . $post->post_title . '</' . esc_attr( $title_tag ) . '>'; 
+				$content .= '<' . esc_attr( $title_tag ) . '>' . $post->post_title . '</' . esc_attr( $title_tag ) . '>';
 			}
 			if ( $suppress_content_filters === 'no' ) {
 				$content .= apply_filters( 'the_content', $post->post_content);
 			} else {
-				$content .= $post->post_content; 
+				$content .= $post->post_content;
 			}
 			$content .= '</div>';
 		endforeach;

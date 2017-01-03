@@ -49,7 +49,7 @@ function custom_post_widget_load_widgets() {
 // Admin-only functions
 if ( is_admin() ) {
 
-	// Add donation link to plugin description
+	// Add donation and review links to plugin description
 	if ( ! function_exists ( 'cpw_plugin_links' ) ) {
 		function cpw_plugin_links( $links, $file ) {
 			$base = plugin_basename( __FILE__ );
@@ -63,4 +63,17 @@ if ( is_admin() ) {
 
 	require_once( 'meta-box.php' );
 	require_once( 'popup.php' );
+
+	// Enqueue styles and scripts on content_block edit page
+	function cpw_enqueue() {
+		$screen = get_current_screen();
+		// Check screen base and current post type
+		if ( 'post' === $screen -> base && 'content_block' === $screen -> post_type ) {
+			wp_enqueue_style( 'cpw-style', plugins_url( '/assets/css/custom-post-widget.css', __FILE__ ) );
+			wp_enqueue_script( 'clipboard', plugins_url( '/assets/js/clipboard.min.js', __FILE__ ), array(), '1.5.16', true );
+			wp_enqueue_script( 'clipboard-init', plugins_url( '/assets/js/clipboard.js', __FILE__ ), array(), false, true );
+		}
+	}
+	add_action( 'admin_enqueue_scripts', 'cpw_enqueue' );
+
 }

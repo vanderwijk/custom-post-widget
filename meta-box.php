@@ -1,19 +1,29 @@
 <?php
 
+// Meta boxes on content_block edit page
 function cpw_add_meta_boxes() {
-	add_meta_box( 'cpw_shortcode', __( 'Content Block Shortcodes', 'custom-post-widget' ), 'cpw_shortcode_meta_box', 'content_block', 'side' );
 	add_meta_box( 'cpw_info', __( 'Content Block Information', 'custom-post-widget' ), 'cpw_info_meta_box', 'content_block', 'side' );
+	add_meta_box( 'cpw_shortcode', __( 'Content Block Shortcodes', 'custom-post-widget' ), 'cpw_shortcode_meta_box', 'content_block', 'side' );
 }
 add_action( 'add_meta_boxes_content_block', 'cpw_add_meta_boxes' );
 
-function cpw_shortcode_meta_box( $post ) {
-	echo '<textarea id="cpw_content_block_information" cols="40" rows="4" name="cpw_content_block_information" style="height: 8em; width: 100%;"></textarea>';
+// Shortcode meta box
+function cpw_shortcode_meta_box( $post ) { ?>
+	<p><?php _e( 'You can place this content block into your posts, pages, custom post types or widgets using the shortcode below:','custom-post-widget' ); ?></p>
+	<code class="cpw-code" id="cpw-shortcode-1"><?php echo '[content_block id=' . $post -> ID . ' slug=' . $post -> post_name . ']'; ?></code>
+	<span class="cpw-clipboard" data-clipboard-target="#cpw-shortcode-1"><?php _e( 'Copy to clipboard', 'custom-post-widget' ); ?></span>
+
+	<p><?php _e( 'Use this shortcode to include the content block title:','custom-post-widget' ); ?></p>
+	<code class="cpw-code" id="cpw-shortcode-2"><?php echo '[content_block id=' . $post -> ID . ' slug=' . $post -> post_name . ' title=yes title_tag=h3]'; ?></code>
+	<span class="cpw-clipboard" data-clipboard-target="#cpw-shortcode-2"><?php _e( 'Copy to clipboard', 'custom-post-widget' ); ?></span>
+<?php
 }
 
+// Info meta box
 function cpw_info_meta_box( $post ) {
 	wp_nonce_field( 'cpw_info_meta_box', 'cpw_info_meta_box_nonce' );
-	$value = get_post_meta( $post->ID, '_content_block_information', true );
-	echo '<textarea id="cpw_content_block_information" cols="40" rows="4" name="cpw_content_block_information" style="height: 8em; width: 100%;">' . esc_attr( $value ) . '</textarea>';
+	$value = get_post_meta( $post -> ID, '_content_block_information', true );
+	echo '<textarea class="cpw-information" id="cpw_content_block_information" cols="40" rows="4" name="cpw_content_block_information">' . esc_attr( $value ) . '</textarea>';
 }
 
 function cpw_save_postdata( $post_id ) {

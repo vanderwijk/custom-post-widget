@@ -79,7 +79,7 @@ If your social media sharing plugin adds buttons to the widget areas you could c
 
 = The title and featured image are not displayed when using the shortcode =
 
-Currently the shortcode function only outputs the post content of the content block, future support for displaying the title and/or the attached featured image is being considered.
+Currently the shortcode function only outputs the post content and title of the content block, future support for displaying the attached featured image is being considered.
 
 = I have a feature request =
 
@@ -88,7 +88,6 @@ These new features are on the to-do list:
 
 * Display the content block featured image when using the shortcode
 * Front-end editing of the content blocks
-* Display shortcode on content block edit screen and/or overview page similar to Contact Form 7
 * Visual Composer integration
 
 = How can I make advanced changes to the widget layout? =
@@ -131,6 +130,9 @@ DO NOT click the 'Broken' button in the compatibility area of the plugin directo
 Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
 
 == Changelog ==
+
+= 2.9 =
+Removed the admin notice, added donation link to plugin overview page. Shortcodes are now displayed on the content block edit screen, thanks to [Remkus](https://forsite.media/) for suggesting this feature.
 
 = 2.8.5 =
 Fix for minor compatibility issue when using the Slider Revolution plugin
