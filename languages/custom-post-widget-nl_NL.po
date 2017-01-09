@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Development (trunk)\n"
-"POT-Creation-Date: 2017-01-03 11:45+0100\n"
-"PO-Revision-Date: 2017-01-03 11:45+0100\n"
+"POT-Creation-Date: 2017-01-03 19:44+0100\n"
+"PO-Revision-Date: 2017-01-03 19:45+0100\n"
 "Last-Translator: Johan van der Wijk <info@vanderwijk.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -22,7 +22,7 @@ msgstr "Schrijf een review"
 msgid "Donate"
 msgstr "Doneer"
 
-#: meta-box.php:5 meta-box.php:57
+#: meta-box.php:5 meta-box.php:61
 msgid "Content Block Information"
 msgstr "Inhoudsblok Informatie"
 
@@ -38,15 +38,20 @@ msgstr ""
 "Je kunt dit inhoudsblok invoegen in je berichten, pagina's, custom posts of "
 "widgets met de onderstaande shortcode:"
 
-#: meta-box.php:14 meta-box.php:18
+#: meta-box.php:14 meta-box.php:18 meta-box.php:22
 msgid "Copy to clipboard"
 msgstr "Kopiëren naar klembord"
 
 #: meta-box.php:16
+msgid "Shortcode to use if you prefer using the slug instead of the post ID:"
+msgstr ""
+"Gebruik deze shortcode als je slug wilt gebruiken in plaats van de post ID:"
+
+#: meta-box.php:20
 msgid "Use this shortcode to include the content block title:"
 msgstr "Gebruik deze shortcode als je de titel van het inhoudsblok wilt tonen:"
 
-#: meta-box.php:26
+#: meta-box.php:30
 msgid "You can use this field to describe this content block:"
 msgstr "U kunt dit veld gebruiken om dit inhoudsblok te beschrijven:"
 
