@@ -50,9 +50,9 @@ function add_content_block_popup() { ?>
 				<?php
 					$args = array( 'post_type' => 'content_block', 'suppress_filters' => 0, 'numberposts' => -1, 'order' => 'ASC' );
 					$content_block = get_posts( $args );
-					if ($content_block) {
+					if ( $content_block ) {
 						foreach( $content_block as $content_block ) : setup_postdata( $content_block );
-							echo '<option value="' . $content_block->ID . '" data-slug="' . $content_block->post_name . '">' . $content_block->post_title . '</option>';
+							echo '<option value="' . $content_block -> ID . '" data-slug="' . $content_block -> post_name . '">' . esc_html( $content_block -> post_title ) . '</option>';
 						endforeach;
 					} else {
 						echo '<option value="">' . __( 'No content blocks available', 'custom-post-widget' ) . '</option>';

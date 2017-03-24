@@ -1,9 +1,9 @@
-=== Custom Post Widget ===
+=== Content Blocks (Custom Post Widget) ===
 Contributors: vanderwijk
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
 Requires at least: 4.0
-Tested up to: 4.7
-Stable tag: 2.9.2
+Tested up to: 4.7.3
+Stable tag: 3.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,14 +11,14 @@ This plugin enables you to edit and display Content Blocks in a sidebar widget o
 
 == Description ==
 
-The [Custom Post Widget](http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=website&utm_campaign=custom_post_widget) allows you to display the contents of a specific custom post in a widget on in the content area using a shortcode.
+The [Content Blocks](http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=website&utm_campaign=custom_post_widget) allows you to display the contents of a specific custom post in a widget on in the content area using a shortcode.
 
 Even though you could use the text widget that comes with the default WordPress install, this plugin has some major benefits:
 
-* The Custom Post Widget plugin enables users to **use the WYSIWYG editor** for editing the content and adding images.
+* The Content Blocks plugin enables users to **use the WYSIWYG editor** for editing the content and adding images.
 * If you are using the standard WordPress text widgets to display content on various areas of your template, this content can only be edited by users with administrator access. If you would like **non-administrator accounts to modify the widget content**, you can use this plugin to provide them access to the custom posts that provide the content for the widget areas.
 * You can even use the **featured image functionality** to display them in a widget.
-* The Custom Post Widget is **compatible with the WPML** Multi-Language plugin and automatically shows the correct language in the widget area.
+* The Content Blocks plugin is **compatible with the WPML** Multi-Language plugin and automatically shows the correct language in the widget area.
 * The Content Blocks can be included in posts and pages using the **built-in shortcode functionality**.
 
 This plugin creates a 'content_block' custom post type. You can choose to either display the title on the page or use it to describe the contents and widget position of the content block. Note that these content blocks can only be displayed in the context of the page. I have added 'public' => false to the custom post type which means that it is not accessible outside the page context.
@@ -27,18 +27,13 @@ To add content to a widget, drag it to the required position in the sidebar and 
 
 **Includes the following translations:**
 
-* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/)
-* Dutch (nl_NL) by [Johan van der Wijk](http://vanderwijk.nl)
-* French (fr_FR) by [Alexandre Simard](http://brocheafoin.biz/)
-* German (de_DE) by [Caspar H&uuml;binger](http://glueckpress.com/)
-* Hebrew (he_IL) by [Daniel Cohen Gindi](https://github.com/danielgindi)
-* Italian (it_IT) by [Ercicion](http://ercicion.altervista.org/blog/)
+* Swedish (sv_SE) by [Andreas Larsson](http://krokedil.se)
 * Polish (pl_PL) by [Kuba Skublicki](https://www.linkedin.com/in/kubecki)
 * Portuguese (pt_BR) by [Ronaldo Chevalier](http://www.hostmeta.com.br/)
-* Russian (ru_RU) by [Vitaliy Kaplya](http://www.dasayt.com/)
-* Swedish (sv_SE) by [Andreas Larsson](http://krokedil.se)
+* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/)
+* Dutch (nl_NL) by [Johan van der Wijk](http://vanderwijk.nl)
 
-More translations are very welcome!
+[More translations are very welcome!](https://translate.wordpress.org/projects/wp-plugins/custom-post-widget)
 
 == Screenshots ==
 
@@ -73,7 +68,7 @@ It is recommended to install the [Widget Logic](http://wordpress.org/extend/plug
 
 This plugin has built-in support for the featured image functionality on the edit screen. Note that featured image will not be resized, so you will have to make sure it is the right size when uploading or restrict the image size via the stylesheet.
 
-= My social sharing plugin adds buttons to all the Custom Post Widget areas =
+= My social sharing plugin adds buttons to all the Content Block areas =
 
 If your social media sharing plugin adds buttons to the widget areas you could check the 'Do not apply content filters' checkbox. Note that when this is done, WordPress will also stop adding paragraph tags to your text, so use this setting with caution. It is much better to ask the developer of the social media sharing buttons plugin to correctly use the content filters (see http://pippinsplugins.com/playing-nice-with-the-content-filter/ for more information on this). If you are embedding your content block with the shortcode, add the following: `suppress_content_filters="yes"`
 
@@ -130,6 +125,12 @@ DO NOT click the 'Broken' button in the compatibility area of the plugin directo
 Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
 
 == Changelog ==
+
+= 3.0.1 =
+Added html sanitizing to the Content Block post titles. Thanks to @palpatine1976 for bringing this to my attention.
+
+= 3.0 =
+Renamed the plugin to Content Blocks to better reflect the purpose.
 
 = 2.9.2 =
 Minor layout change to the Shortcodes meta box.
