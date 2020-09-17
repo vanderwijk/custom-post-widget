@@ -2,8 +2,8 @@
 Contributors: vanderwijk
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
 Requires at least: 4.0
-Tested up to: 5.5
-Stable tag: 3.1.2
+Tested up to: 5.5.1
+Stable tag: 3.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
