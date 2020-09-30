@@ -3,7 +3,7 @@ Contributors: vanderwijk
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
 Requires at least: 4.0
 Tested up to: 5.5.1
-Stable tag: 3.1.3
+Stable tag: 3.1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -126,7 +126,7 @@ Creating and supporting this plugin takes up a lot of my free time, therefore I 
 
 == Changelog ==
 
-= 3.1.3 =
+= 3.1.4 =
 Minor bugfix and upgrade for the clipboard.js script. Thanks to https://wordpress.org/support/users/vikaspandeyd/ for reporting this!
 
 = 3.1 =
