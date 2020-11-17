@@ -29,10 +29,10 @@ To add content to a widget, drag it to the required position in the sidebar and 
 
 * Swedish (sv_SE) by [Andreas Larsson](http://krokedil.se)
 * Spanish (es_ES) by [IBIDEM GROUP](https://www.ibidemgroup.com)
-* Polish (pl_PL) by [Kuba Skublicki](https://www.linkedin.com/in/kubecki)
 * Portuguese (pt_BR) by [Ronaldo Chevalier](http://www.hostmeta.com.br/)
-* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/)
+* Polish (pl_PL) by [Kuba Skublicki](https://www.linkedin.com/in/kubecki)
 * Dutch (nl_NL) by [Johan van der Wijk](http://vanderwijk.nl)
+* Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/)
 
 [More translations are very welcome!](https://translate.wordpress.org/projects/wp-plugins/custom-post-widget)
 
