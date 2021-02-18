@@ -3,7 +3,7 @@
  Plugin Name: Content Blocks (Custom Post Widget)
  Plugin URI: http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget
  Description: Show the content of a custom post of the type 'content_block' in a widget or with a shortcode.
- Version: 3.1.6
+ Version: 3.2
  Author: Johan van der Wijk
  Author URI: https://vanderwijk.nl
  Donate link: https://www.paypal.me/vanderwijk
@@ -11,7 +11,7 @@
  Domain Path: /languages
  License: GPL2
 
- Release notes: Compatibility testing
+ Release notes: You can now use your own templates for outputting the shortcode contents
 
  Copyright 2021 Johan van der Wijk
 
@@ -35,16 +35,23 @@ function custom_post_widget_plugin_init() {
 }
 add_action( 'plugins_loaded', 'custom_post_widget_plugin_init' );
 
+// Loads the widgets packaged with the plugin.
+function custom_post_widget_load_widgets() {
+	require_once( 'post-type.php' );
+	require_once( 'shortcode.php' );
+	require_once( 'widget.php' );
+	register_widget( 'custom_post_widget' );
+}
+
 // Load plugin textdomain.
 function custom_post_widget_load_textdomain() {
 	load_plugin_textdomain( 'custom-post-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'custom_post_widget_load_textdomain' );
 
-// Loads the widgets packaged with the plugin.
-function custom_post_widget_load_widgets() {
-	require_once( 'post-widget.php' );
-	register_widget( 'custom_post_widget' );
+// Add featured image support
+if ( function_exists( 'add_theme_support' ) ) {
+	add_theme_support( 'post-thumbnails' );
 }
 
 // Admin-only functions
@@ -76,5 +83,15 @@ if ( is_admin() ) {
 		}
 	}
 	add_action( 'admin_enqueue_scripts', 'cpw_enqueue' );
+
+	// Only add content_block icon above posts and pages
+	function cpw_add_content_block_button() {
+		global $current_screen;
+		if ( ( 'content_block' != $current_screen -> post_type ) && ( 'toplevel_page_revslider' != $current_screen -> id ) ) {
+			add_action( 'media_buttons', 'add_content_block_icon' );
+			add_action( 'admin_footer', 'add_content_block_popup' );
+		}
+	}
+	add_action( 'admin_head', 'cpw_add_content_block_button' );
 
 }
