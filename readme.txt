@@ -132,7 +132,7 @@ Creating and supporting this plugin takes up a lot of my free time, therefore I 
 == Changelog ==
 
 = 3.1.6 =
-Compatibility testing.
+Compatibility testing. Also tested on PHP8 and found no issues.
 
 = 3.1.5 =
 Spanish translation added and readme.txt file updates.
