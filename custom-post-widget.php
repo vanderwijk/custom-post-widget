@@ -29,13 +29,13 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 */
 
-// Launch the plugin.
+// Launch the plugin
 function custom_post_widget_plugin_init() {
 	add_action( 'widgets_init', 'custom_post_widget_load_widgets' );
 }
 add_action( 'plugins_loaded', 'custom_post_widget_plugin_init' );
 
-// Loads the widgets packaged with the plugin.
+// Loads the widgets packaged with the plugin
 function custom_post_widget_load_widgets() {
 	require_once( 'post-type.php' );
 	require_once( 'shortcode.php' );
@@ -43,7 +43,7 @@ function custom_post_widget_load_widgets() {
 	register_widget( 'custom_post_widget' );
 }
 
-// Load plugin textdomain.
+// Load plugin textdomain
 function custom_post_widget_load_textdomain() {
 	load_plugin_textdomain( 'custom-post-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
 }
