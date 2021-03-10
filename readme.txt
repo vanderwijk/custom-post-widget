@@ -81,7 +81,7 @@ Currently the shortcode function only outputs the post content and title of the 
 
 Yes, you can create your own template for the content blocks, you can do so by adding a file named custom-post-widget.php to your theme folder. More information about this can be found in this [support topic](https://wordpress.org/support/topic/patch-custom-widget-frontends/?replies=1)
 
-In the `example-templates` folder of this plugin you can find examples of templates for shortcodes and for widgets.
+In these Gists you can find examples of templates for [shortcodes](https://gist.github.com/vanderwijk/18acd549b099253eb222daf7757f1689) and for [widgets](https://gist.github.com/vanderwijk/a396171845cf923c23d09dddb4269fb1)
 
 = I have a feature request =
 
