@@ -3,7 +3,7 @@ Contributors: vanderwijk
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
 Requires at least: 4.0
 Tested up to: 5.7
-Stable tag: 3.2
+Stable tag: 3.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -132,6 +132,9 @@ DO NOT click the 'Broken' button in the compatibility area of the plugin directo
 Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
 
 == Changelog ==
+
+= 3.2.1 =
+Bugfix for notice in shortcode.php
 
 = 3.2 =
 Thanks to Bruce from [Ingeni Web Solutions](https://ingeni.net/) it is now possible to use your own template for embedding the custom post shortcode.
