@@ -53,7 +53,7 @@ function custom_post_widget_shortcode( $atts ) {
 
 		foreach( $content_post as $post ) :
 
-			if ( ( $located ) ) {
+			if ( isset( $located ) ) {
 				// Template-based content
 				$content .= call_user_func( 'shortcode_template', $post );
 
