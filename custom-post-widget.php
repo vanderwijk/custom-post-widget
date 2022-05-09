@@ -11,7 +11,7 @@
  Domain Path: /languages
  License: GPL2
 
- Release notes: WP 5.8 compatibility tested and confirmed
+ Release notes: WP 6.0 compatibility tested and confirmed
 
  Copyright 2021 Johan van der Wijk
 
