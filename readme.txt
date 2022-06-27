@@ -91,6 +91,7 @@ These new features are on the to-do list:
 * Display the content block featured image when using the shortcode
 * Front-end editing of the content blocks
 * Visual Composer integration
+* Show the shortcode on the "View all Content Blocks" list view
 
 = How can I make advanced changes to the widget layout? =
 
