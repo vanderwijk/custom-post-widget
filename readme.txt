@@ -2,8 +2,8 @@
 Contributors: vanderwijk
 Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
 Requires at least: 4.0
-Tested up to: 6.2
-Stable tag: 3.2.5
+Tested up to: 6.3
+Stable tag: 3.2.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,8 +29,8 @@ To add content to a widget, drag it to the required position in the sidebar and 
 
 * Swedish (sv_SE) by [Andreas Larsson](http://krokedil.se)
 * Spanish (es_ES) by [IBIDEM GROUP](https://www.ibidemgroup.com)
-* Portuguese (pt_BR) by [Ronaldo Chevalier](http://www.hostmeta.com.br/)
-* Polish (pl_PL) by [Kuba Skublicki](https://www.linkedin.com/in/kubecki)
+* Portuguese (pt_BR) by Ronaldo Chevalier
+* Polish (pl_PL) by Kuba Skublicki
 * Dutch (nl_NL) by [Johan van der Wijk](https://vanderwijk.nl)
 * Czech (cs_CZ) by [Martin Kucera](http://jsemweb.cz/)
 
@@ -133,6 +133,9 @@ DO NOT click the 'Broken' button in the compatibility area of the plugin directo
 Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
 
 == Changelog ==
+
+= 3.2.6 =
+WP 6.3 compatibility tested and confirmed
 
 = 3.2.2 =
 WP 5.8 compatibility tested and confirmed
@@ -286,14 +289,14 @@ Added the option to disable apply_filters on the content to prevent issues with 
 Corrected a minor bug regarding translation strings.
 
 = 1.9.3 =
-Minor bugfix and added the French translation which was created by Alexandre Simard (http://brocheafoin.biz/).
+Minor bugfix and added the French translation which was created by Alexandre Simard.
 
 = 1.9.2 =
 Now includes Polish language files as created by Kuba Skublicki.
 
 = 1.9 =
-The content blocks can now be translated using the WPML plugin, thanks to Jonathan Liuti (http://unboxed-logic.com/).
-Thanks to Vitaliy Kaplya (http://www.dasayt.com/) a Russian translation has been added to the plugin.
+The content blocks can now be translated using the WPML plugin, thanks to Jonathan Liuti.
+Thanks to Vitaliy Kaplya (https://vitaliikaplia.com/) a Russian translation has been added to the plugin.
 
 = 1.8.6 =
 Minor bugfix for edit link in widget.
@@ -303,7 +306,7 @@ This release is to fix an issue with the WordPress plugin repository.
 
 = 1.8.4 =
 Added edit content block link to the widget editor and changed the 'view content block' message to include a 'manage widgets' link. The 'Draft' and 'Preview' buttons are now hidden via CSS, hopefully this will soon be default WordPress behaviour (see related ticket: http://core.trac.wordpress.org/ticket/18956).
-Thanks to Julian Gardner-Hobbs (http://www.hobwebs.com/) for requesting this functionality.
+Thanks to Julian Gardner-Hobbs for requesting this functionality.
 
 = 1.8.3 -> rolled-back because of some reported issues with social media icons being added to the widget areas =
 The widget now emulates the $post loop. This means you can now make use of WordPress functionality such as inserting a [gallery]. Thanks to Jari Pennanen for providing the code.
