@@ -1,11 +1,12 @@
-=== Content Blocks (Custom Post Widget) ===
-Contributors: vanderwijk
-Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image
-Requires at least: 4.0
-Tested up to: 6.3
-Stable tag: 3.2.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+=== Content Blocks (Custom Post Widget) ===  
+Contributors: vanderwijk  
+Donate link:  https://www.paypal.me/vanderwijk  
+Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image  
+Requires at least: 4.6  
+Tested up to: 6.3  
+Stable tag: 3.2.6  
+License: GPLv2 or later  
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
 This plugin enables you to edit and display Content Blocks in a sidebar widget or using a shortcode.
 
@@ -126,7 +127,6 @@ See http://codex.wordpress.org/Function_Reference/do_shortcode for more informat
 = The plugin is not working for me =
 
 Please create a support topic in the forum: http://wordpress.org/support/plugin/custom-post-widget
-DO NOT click the 'Broken' button in the compatibility area of the plugin directory before creating a support ticket. It is very demotivating for me to see the plugin downloads drop dramatically without being given the chance to help you!
 
 = I love your plugin! What can I do to help? =
 

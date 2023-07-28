@@ -6,7 +6,6 @@
  Version: 3.2.6
  Author: Johan van der Wijk
  Author URI: https://vanderwijk.nl
- Donate link: https://www.paypal.me/vanderwijk
  Text Domain: custom-post-widget
  Domain Path: /languages
  License: GPL2
