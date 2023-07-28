@@ -1,3 +1,5 @@
-# These are supported funding model platforms
+# repo:     vanderwijk/custom-post-widget
+# filename: funding.yml
 
+github: vanderwijk
 custom: https://www.paypal.me/vanderwijk
