@@ -45,7 +45,7 @@ function content_block_messages( $messages ) {
 		6 => current_user_can( 'edit_theme_options' ) ? sprintf( __( 'Content Block published. <a href="%s">Manage Widgets</a>', 'custom-post-widget' ), esc_url( 'widgets.php' ) ) : sprintf( __( 'Content Block published.', 'custom-post-widget' ), esc_url( 'widgets.php' ) ),
 		7 => __( 'Block saved.', 'custom-post-widget' ),
 		8 => current_user_can( 'edit_theme_options' ) ? sprintf( __( 'Content Block submitted. <a href="%s">Manage Widgets</a>', 'custom-post-widget' ), esc_url( 'widgets.php' ) ) : sprintf( __( 'Content Block submitted.', 'custom-post-widget' ), esc_url( 'widgets.php' ) ),
-		9 => sprintf( __( 'Content Block scheduled for: <strong>%1$s</strong>.', 'custom-post-widget' ), date_i18n( __( 'M j, Y @ G:i' , 'custom-post-widget' ), strtotime(isset($post->post_date) ? $post->post_date : null) ), esc_url( 'widgets.php' ) ),
+		9 => sprintf( __( 'Content Block scheduled for: <strong>%1$s</strong>.', 'custom-post-widget' ), date_i18n( __( 'M j, Y @ G:i' , 'custom-post-widget' ), strtotime(isset($post->post_date) ? $post->post_date : '') ), esc_url( 'widgets.php' ) ),
 		10 => current_user_can( 'edit_theme_options' ) ? sprintf( __( 'Content Block draft updated. <a href="%s">Manage Widgets</a>', 'custom-post-widget' ), esc_url( 'widgets.php' ) ) : sprintf( __( 'Content Block draft updated.', 'custom-post-widget' ), esc_url( 'widgets.php' ) ),
 	);
 	return $messages;
