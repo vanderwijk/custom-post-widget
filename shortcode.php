@@ -1,8 +1,8 @@
 <?php
 
 // Add the ability to display the content block in a reqular post using a shortcode
-function custom_post_widget_shortcode( $atts ) {
-	$params = shortcode_atts( array(
+function custom_post_widget_shortcode ( $atts ) {
+	$params = shortcode_atts ( array (
 		'id' => '',
 		'slug' => '',
 		'class' => 'content_block',
@@ -15,19 +15,20 @@ function custom_post_widget_shortcode( $atts ) {
 		'template' => ''
 	), $atts );
 
-	$id = $params['id'];
-	$slug = $params['slug'];
-	$class = $params['class'];
-	$suppress_content_filters = $params['suppress_content_filters'];
-	$featured_image = $params['featured_image'];
-	$featured_image_size = $params['featured_image_size'];
-	$title = $params['title'];
-	$title_tag = $params['title_tag'];
-	$markup = $params['markup'];
-	$template = $params['template'];
+	// Sanitize and escape attributes
+	$id = sanitize_text_field ( $params['id'] );
+	$slug = sanitize_text_field ( $params['slug'] );
+	$class = sanitize_text_field ( $params['class'] );
+	$suppress_content_filters = sanitize_text_field ( $params['suppress_content_filters'] );
+	$featured_image = sanitize_text_field ( $params['featured_image'] );
+	$featured_image_size = sanitize_text_field ( $params['featured_image_size'] );
+	$title = sanitize_text_field ( $params['title'] );
+	$title_tag = sanitize_text_field ( $params['title_tag'] );
+	$markup = sanitize_text_field ( $params['markup'] );
+	$template = sanitize_text_field ( $params['template'] );
 
 	if ( $slug ) {
-		$block = get_page_by_path( $slug, OBJECT, 'content_block' );
+		$block = get_page_by_path ( $slug, OBJECT, 'content_block' );
 		if ( $block ) {
 			$id = $block->ID;
 		}
@@ -36,47 +37,45 @@ function custom_post_widget_shortcode( $atts ) {
 	$content = "";
 
 	// Attempt to load a template file
-	if ( $params['template'] != '' ) {
-		if ( $located = locate_template( $params['template'] ) ) {
+	if ( $template != '' ) {
+		if ( $located = locate_template ( $template ) ) {
 			include_once $located;
 		}
 	}
 
 	if ( $id != "" ) {
-
-		$args = array(
-			'post__in' => array( $id ),
+		$args = array (
+			'post__in' => array ( $id ),
 			'post_type' => 'content_block',
 		);
 
-		$content_post = get_posts( $args );
+		$content_post = get_posts ( $args );
 
-		foreach( $content_post as $post ) :
+		foreach ( $content_post as $post ) :
 
 			if ( isset( $located ) ) {
 				// Template-based content
-				$content .= call_user_func( 'shortcode_template', $post );
+				$content .= call_user_func ( 'shortcode_template', $post );
 
 			} else {
 				// Standard format content
-				$content .= '<' . esc_attr( $markup ) . ' class="'. esc_attr( $class ) .'" id="custom_post_widget-' . $id . '">';
+				$content .= '<' . esc_attr ( $markup ) . ' class="'. esc_attr ( $class ) .'" id="custom_post_widget-' . esc_attr ( $id ) . '">';
 				if ( $title === 'yes' ) {
-					$content .= '<' . esc_attr( $title_tag ) . '>' . $post -> post_title . '</' . esc_attr( $title_tag ) . '>';
+					$content .= '<' . esc_attr ( $title_tag ) . '>' . esc_html ( $post->post_title ) . '</' . esc_attr ( $title_tag ) . '>';
 				}
 				if ( $featured_image === 'yes' ) {
-					$content .= get_the_post_thumbnail( $post -> ID, $featured_image_size );
+					$content .= get_the_post_thumbnail ( $post->ID, esc_attr ( $featured_image_size ) );
 				}
 				if ( $suppress_content_filters === 'no' ) {
-					$content .= apply_filters( 'the_content', $post -> post_content );
+					$content .= apply_filters ( 'the_content', $post->post_content );
 				} else {
-					$content .= $post -> post_content;
+					$content .= esc_html ( $post->post_content );
 				}
-				$content .= '</' .  esc_attr( $markup ) . '>';
+				$content .= '</' . esc_attr ( $markup ) . '>';
 			}
 		endforeach;
-
 	}
 
 	return $content;
 }
-add_shortcode( 'content_block', 'custom_post_widget_shortcode' );
+add_shortcode ( 'content_block', 'custom_post_widget_shortcode' );
