@@ -1,7 +1,7 @@
 === Content Blocks (Custom Post Widget) ===  
 Contributors: vanderwijk  
 Donate link:  https://www.paypal.me/vanderwijk  
-Tags: widget, sidebar, content block, block, custom, post, shortcode, wysiwyg, wpml, featured image  
+Tags: widget, content block, block, custom post, shortcode
 Requires at least: 4.6  
 Tested up to: 6.4  
 Stable tag: 3.2.8  
