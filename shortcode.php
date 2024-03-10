@@ -69,7 +69,7 @@ function custom_post_widget_shortcode ( $atts ) {
 				if ( $suppress_content_filters === 'no' ) {
 					$content .= apply_filters ( 'the_content', $post->post_content );
 				} else {
-					$content .= esc_html ( $post->post_content );
+					$content .= $post->post_content;
 				}
 				$content .= '</' . esc_attr ( $markup ) . '>';
 			}
