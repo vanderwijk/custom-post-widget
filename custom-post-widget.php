@@ -10,7 +10,7 @@
  Domain Path: /languages
  License: GPL2
 
- Release notes: Fix for stripped html tags when using the suppress_content_filters option on the shortcode
+ Release notes: WP 6.5 compatibility tested and confirmed
 
  Copyright 2024 Johan van der Wijk
 
