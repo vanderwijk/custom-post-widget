@@ -66,7 +66,7 @@ class custom_post_widget extends WP_Widget {
 
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
-		$instance['custom_post_id'] = strip_tags( $new_instance['custom_post_id'] );
+		$instance['custom_post_id'] = wp_strip_all_tags( $new_instance['custom_post_id'] );
 		$instance['show_custom_post_title'] = $new_instance['show_custom_post_title'];
 		$instance['show_featured_image'] = $new_instance['show_featured_image'];
 		$instance['apply_content_filters'] = $new_instance['apply_content_filters'];
