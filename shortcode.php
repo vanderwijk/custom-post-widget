@@ -38,9 +38,18 @@ function custom_post_widget_shortcode ( $atts ) {
 
 	// Attempt to load a template file
 	if ( $template != '' ) {
-		if ( $located = locate_template ( $template ) ) {
-			include_once $located;
+
+		$located = locate_template( $template );
+
+		$template_in_theme_or_parent_theme = (
+			0 === strpos ( realpath ( $located ), realpath ( STYLESHEETPATH ) ) ||
+			0 === strpos ( realpath ( $located ), realpath ( TEMPLATEPATH ) )
+		);
+		
+		if ( $template_in_theme_or_parent_theme ) {
+			require_once( $located );
 		}
+
 	}
 
 	if ( $id != "" ) {
@@ -53,15 +62,15 @@ function custom_post_widget_shortcode ( $atts ) {
 
 		foreach ( $content_post as $post ) :
 
-			if ( isset( $located ) ) {
+			if ( isset( $template_in_theme_or_parent_theme ) && $template_in_theme_or_parent_theme === true ) {
 				// Template-based content
 				$content .= call_user_func ( 'shortcode_template', $post );
 
 			} else {
 				// Standard format content
-				$content .= '<' . esc_attr ( $markup ) . ' class="'. esc_attr ( $class ) .'" id="custom_post_widget-' . esc_attr ( $id ) . '">';
+				$content .= '<' . tag_escape ( $markup ) . ' class="'. esc_attr ( $class ) .'" id="custom_post_widget-' . esc_attr ( $id ) . '">';
 				if ( $title === 'yes' ) {
-					$content .= '<' . esc_attr ( $title_tag ) . '>' . esc_html ( $post->post_title ) . '</' . esc_attr ( $title_tag ) . '>';
+					$content .= '<' . tag_escape ( $title_tag ) . '>' . esc_html ( $post->post_title ) . '</' . tag_escape ( $title_tag ) . '>';
 				}
 				if ( $featured_image === 'yes' ) {
 					$content .= get_the_post_thumbnail ( $post->ID, esc_attr ( $featured_image_size ) );
@@ -71,7 +80,7 @@ function custom_post_widget_shortcode ( $atts ) {
 				} else {
 					$content .= $post->post_content;
 				}
-				$content .= '</' . esc_attr ( $markup ) . '>';
+				$content .= '</' . tag_escape ( $markup ) . '>';
 			}
 		endforeach;
 	}
