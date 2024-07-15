@@ -3,7 +3,7 @@ Contributors: vanderwijk
 Donate link:  https://www.paypal.me/vanderwijk  
 Tags: widget, content block, block, custom post, shortcode
 Requires at least: 4.6  
-Tested up to: 6.5  
+Tested up to: 6.6  
 Stable tag: 3.3.2  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
