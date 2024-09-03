@@ -24,6 +24,9 @@ function custom_post_widget_shortcode ( $atts ) {
 	$featured_image_size = sanitize_text_field ( $params['featured_image_size'] );
 	$title = sanitize_text_field ( $params['title'] );
 	$title_tag = sanitize_text_field ( $params['title_tag'] );
+	if ( $title_tag === 'script' ) {
+		$title_tag = 'h3'; // Default to 'h3' if 'script' is attempted
+	}
 	$markup = sanitize_text_field ( $params['markup'] );
 	$template = sanitize_text_field ( $params['template'] );
 
