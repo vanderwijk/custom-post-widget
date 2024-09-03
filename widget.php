@@ -50,17 +50,17 @@ class custom_post_widget extends WP_Widget {
 
 		<p>
 			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['show_custom_post_title'] ), true ); ?> id="<?php echo esc_attr ( $this->get_field_id( 'show_custom_post_title' ) ); ?>" name="<?php echo esc_attr ( $this->get_field_name( 'show_custom_post_title' ) ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_custom_post_title' ); ?>"><?php echo esc_html__( 'Show post title', 'custom-post-widget' ) ?></label>
+			<label for="<?php echo esc_attr ( $this->get_field_id( 'show_custom_post_title' ) ); ?>"><?php echo esc_html__( 'Show post title', 'custom-post-widget' ) ?></label>
 		</p>
 
 		<p>
-			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['show_featured_image'] ), true ); ?> id="<?php echo $this->get_field_id( 'show_featured_image' ); ?>" name="<?php echo $this->get_field_name( 'show_featured_image' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'show_featured_image' ); ?>"><?php echo esc_html__( 'Show featured image', 'custom-post-widget' ) ?></label>
+			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['show_featured_image'] ), true ); ?> id="<?php echo esc_attr ( $this->get_field_id( 'show_featured_image' ) ); ?>" name="<?php echo esc_attr ( $this->get_field_name( 'show_featured_image' ) ); ?>" />
+			<label for="<?php echo esc_attr ( $this->get_field_id( 'show_featured_image' ) ); ?>"><?php echo esc_html__( 'Show featured image', 'custom-post-widget' ) ?></label>
 		</p>
 
 		<p>
-			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['apply_content_filters'] ), true ); ?> id="<?php echo $this->get_field_id( 'apply_content_filters' ); ?>" name="<?php echo $this->get_field_name( 'apply_content_filters' ); ?>" />
-			<label for="<?php echo $this->get_field_id( 'apply_content_filters' ); ?>"><?php echo esc_html__( 'Do not apply content filters', 'custom-post-widget' ) ?></label>
+			<input class="checkbox" type="checkbox" <?php checked( (bool) isset( $instance['apply_content_filters'] ), true ); ?> id="<?php echo esc_attr ( $this->get_field_id( 'apply_content_filters' ) ); ?>" name="<?php echo esc_attr ( $this->get_field_name( 'apply_content_filters' ) ); ?>" />
+			<label for="<?php echo esc_attr ( $this->get_field_id( 'apply_content_filters' ) ); ?>"><?php echo esc_html__( 'Do not apply content filters', 'custom-post-widget' ) ?></label>
 		</p> <?php
 	}
 
