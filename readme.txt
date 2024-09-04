@@ -4,7 +4,7 @@ Donate link:  https://www.paypal.me/vanderwijk
 Tags: widget, content block, block, custom post, shortcode
 Requires at least: 4.6  
 Tested up to: 6.6  
-Stable tag: 3.3.4  
+Stable tag: 3.3.5  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -134,7 +134,7 @@ Creating and supporting this plugin takes up a lot of my free time, therefore I 
 
 == Changelog ==
 
-= 3.3.4 =
+= 3.3.5 =
 Security fix for potential use of script tags in the title. Added output sanitization.
 
 = 3.3.3 =
