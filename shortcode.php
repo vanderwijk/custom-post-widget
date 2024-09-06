@@ -23,9 +23,10 @@ function custom_post_widget_shortcode ( $atts ) {
 	$featured_image = sanitize_text_field ( $params['featured_image'] );
 	$featured_image_size = sanitize_text_field ( $params['featured_image_size'] );
 	$title = sanitize_text_field ( $params['title'] );
-	$title_tag = strtolower ( sanitize_text_field ( $params['title_tag'] ) );
-	if ( $title_tag === 'script' ) {
-		$title_tag = 'h3'; // Default to 'h3' if 'script' is attempted
+	$title_tag = strtolower( sanitize_text_field( $params['title_tag'] ) );
+	$allowed_tags = array( 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'span', 'div' ); // Add or remove allowed HTML tags as needed
+	if ( ! in_array( $title_tag, $allowed_tags ) ) {
+		$title_tag = 'h3'; // Default to 'h3' if the specified tag is not allowed
 	}
 	$markup = sanitize_text_field ( $params['markup'] );
 	$template = sanitize_text_field ( $params['template'] );
