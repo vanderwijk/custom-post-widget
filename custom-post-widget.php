@@ -28,9 +28,11 @@
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
 */
 
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
 // Launch the plugin
 function custom_post_widget_plugin_init() {
-	add_action( 'widgets_init', 'custom_post_widget_load_widgets' );
+	add_action( 'widgets_init', 'custom_post_widget_load_widgets' );;
 }
 add_action( 'plugins_loaded', 'custom_post_widget_plugin_init' );
 
@@ -41,6 +43,16 @@ function custom_post_widget_load_widgets() {
 	require_once( 'widget.php' );
 	register_widget( 'custom_post_widget' );
 }
+
+// Include Elementor widget after Elementor is initialized
+function cpw_load_elementor_widget() {
+    // Check if Elementor is active and loaded
+    if ( did_action( 'elementor/loaded' ) ) {
+        // Include the Elementor widget file
+        require_once( 'elementor-widget.php' );
+    }
+}
+add_action( 'init', 'cpw_load_elementor_widget' );
 
 // Load plugin textdomain
 function custom_post_widget_load_textdomain() {
