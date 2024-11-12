@@ -106,3 +106,61 @@ if ( is_admin() ) {
 	add_action( 'admin_head', 'cpw_add_content_block_button' );
 
 }
+
+// Register the shortcode
+function cpw_content_block_shortcode( $atts ) {
+    $atts = shortcode_atts( array(
+        'id' => '',
+    ), $atts, 'cpw_content_block' );
+
+    if ( ! empty( $atts['id'] ) ) {
+        $post = get_post( $atts['id'] );
+        if ( $post ) {
+            $content = apply_filters( 'the_content', $post->post_content );
+            return $content;
+        }
+    }
+    return '';
+}
+add_shortcode( 'cpw_content_block', 'cpw_content_block_shortcode' );
+
+// Map the shortcode to WPBakery Page Builder
+function cpw_vc_content_block_mapping() {
+    // Check if WPBakery Page Builder is installed
+    if ( ! defined( 'WPB_VC_VERSION' ) ) {
+        return;
+    }
+
+    // Get all content blocks
+    $content_blocks = get_posts( array(
+        'post_type'      => 'content_block',
+        'posts_per_page' => -1,
+    ) );
+
+    $options = array();
+    if ( $content_blocks ) {
+        foreach ( $content_blocks as $content_block ) {
+            $options[ $content_block->post_title ] = $content_block->ID;
+        }
+    } else {
+        $options[ __( 'No content blocks found', 'custom-post-widget' ) ] = '';
+    }
+
+    vc_map( array(
+        'name'        => __( 'Content Block', 'custom-post-widget' ),
+        'base'        => 'cpw_content_block',
+        'description' => __( 'Display a content block', 'custom-post-widget' ),
+        'category'    => __( 'Content', 'custom-post-widget' ),
+        'params'      => array(
+            array(
+                'type'        => 'dropdown',
+                'heading'     => __( 'Select Content Block', 'custom-post-widget' ),
+                'param_name'  => 'id',
+                'value'       => $options,
+                'admin_label' => true,
+                'description' => __( 'Choose which content block to display.', 'custom-post-widget' ),
+            ),
+        ),
+    ) );
+}
+add_action( 'vc_before_init', 'cpw_vc_content_block_mapping' );
