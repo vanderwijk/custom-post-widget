@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Meta boxes on content_block edit page
 function cpw_add_meta_boxes() {
 	add_meta_box( 'cpw_info', __( 'Content Block Information', 'custom-post-widget' ), 'cpw_info_meta_box', 'content_block', 'side' );

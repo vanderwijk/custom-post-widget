@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Add the ability to display the content block in a reqular post using a shortcode
 function custom_post_widget_shortcode ( $atts ) {
 	$params = shortcode_atts ( array (

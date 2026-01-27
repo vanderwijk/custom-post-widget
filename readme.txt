@@ -4,7 +4,7 @@ Donate link:  https://www.paypal.me/vanderwijk
 Tags: widget, content block, block, custom post, shortcode
 Requires at least: 4.6  
 Tested up to: 6.9  
-Stable tag: 3.4.0  
+Stable tag: 3.4.1  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -134,7 +134,7 @@ Creating and supporting this plugin takes up a lot of my free time, therefore I 
 
 == Changelog ==
 
-= 3.4.0 =
+= 3.4.1 =
 Security fix: Added allowlist validation for the shortcode markup attribute to prevent XSS attacks (CVE-2026-0894).
 
 = 3.3.9 =

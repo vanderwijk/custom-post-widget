@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // First create the widget for the admin panel
 class custom_post_widget extends WP_Widget {
 	function __construct() {

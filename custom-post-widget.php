@@ -3,7 +3,7 @@
  Plugin Name: Content Blocks (Custom Post Widget)
  Plugin URI: https://vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget
  Description: Show the content of a custom post of the type 'content_block' in a widget or with a shortcode.
- Version: 3.4.0
+ Version: 3.4.1
  Author: Johan van der Wijk
  Author URI: https://vanderwijk.nl
  Text Domain: custom-post-widget
@@ -89,8 +89,8 @@ if ( is_admin() ) {
 		// Check screen base and current post type
 		if ( 'post' === $screen -> base && 'content_block' === $screen -> post_type ) {
 			wp_enqueue_style( 'cpw-style', plugins_url( '/assets/css/custom-post-widget.css', __FILE__ ), array(), esc_attr( get_plugin_data( __FILE__ )['Version'] ), 'all' );
-			wp_enqueue_script( 'clipboard', plugins_url( '/assets/js/clipboard.min.js', __FILE__ ), array(), '2.0.6', true );
-			wp_enqueue_script( 'clipboard-init', plugins_url( '/assets/js/clipboard.js', __FILE__ ), array(), esc_attr( get_plugin_data( __FILE__ )['Version'] ), true );
+			wp_enqueue_script( 'clipboard' );
+			wp_enqueue_script( 'clipboard-init', plugins_url( '/assets/js/clipboard-init.js', __FILE__ ), array( 'clipboard' ), esc_attr( get_plugin_data( __FILE__ )['Version'] ), true );
 		}
 	}
 	add_action( 'admin_enqueue_scripts', 'cpw_enqueue' );

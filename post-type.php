@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Create the Content Block custom post type
 function cpw_post_type_init() {
 	$labels = array(

@@ -1,5 +1,7 @@
 <?php
 
+if ( ! defined( 'ABSPATH' ) ) exit;
+
 // Add button above editor if not editing content_block
 function add_content_block_icon() {
 	echo '<style>
