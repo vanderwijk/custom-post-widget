@@ -88,6 +88,9 @@ class custom_post_widget extends WP_Widget {
 		$show_featured_image = isset($instance['show_featured_image']) ? $instance['show_featured_image'] : false;
 		$apply_content_filters = isset($instance['apply_content_filters']) ? $instance['apply_content_filters'] : false;
 		$content_post = get_post( $custom_post_id );
+		if ( ! $content_post ) {
+			return;
+		}
 		$post_status = get_post_status( $custom_post_id );
 		$content = $content_post->post_content;
 		if ( $post_status == 'publish' ) {

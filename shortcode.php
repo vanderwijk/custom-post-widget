@@ -51,6 +51,10 @@ function custom_post_widget_shortcode ( $atts ) {
 
 		$located = locate_template( $template );
 
+		if ( empty( $located ) ) {
+			return $content;
+		}
+
 		$template_in_theme_or_parent_theme = (
 			0 === strpos ( realpath ( $located ), realpath ( get_stylesheet_directory() ) ) ||
 			0 === strpos ( realpath ( $located ), realpath ( get_template_directory() ) )
