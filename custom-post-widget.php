@@ -3,14 +3,14 @@
  Plugin Name: Content Blocks (Custom Post Widget)
  Plugin URI: https://vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget
  Description: Show the content of a custom post of the type 'content_block' in a widget or with a shortcode.
- Version: 3.4.2
+ Version: 3.4.3
  Author: Johan van der Wijk
  Author URI: https://vanderwijk.nl
  Text Domain: custom-post-widget
  Domain Path: /languages
  License: GPL2
 
- Release notes: WP 7.0 compatibility tested and confirmed
+ Release notes: Fixed PHP 8+ fatal errors when a widget references a deleted content block or a shortcode references a missing template. Missing templates now fall back to the standard shortcode output.
  
  Copyright 2026 Johan van der Wijk
 
