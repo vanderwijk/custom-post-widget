@@ -3,8 +3,8 @@ Contributors: vanderwijk
 Donate link:  https://www.paypal.me/vanderwijk  
 Tags: widget, content block, block, custom post, shortcode
 Requires at least: 4.6  
-Tested up to: 6.9  
-Stable tag: 3.4.1  
+Tested up to: 7.0  
+Stable tag: 3.4.2  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -133,6 +133,9 @@ Please create a support topic in the forum: http://wordpress.org/support/plugin/
 Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
 
 == Changelog ==
+
+= 3.4.2 =
+WP 7.0 compatibility tested and confirmed
 
 = 3.4.1 =
 Security fix: Added allowlist validation for the shortcode markup attribute to prevent XSS attacks (CVE-2026-0894).
