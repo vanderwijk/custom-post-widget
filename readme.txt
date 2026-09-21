@@ -3,8 +3,8 @@ Contributors: vanderwijk
 Donate link:  https://www.paypal.me/vanderwijk  
 Tags: widget, content block, block, custom post, shortcode
 Requires at least: 4.6  
-Tested up to: 7.0  
-Stable tag: 3.4.3  
+Tested up to: 7.1  
+Stable tag: 3.4.4  
 License: GPLv2 or later  
 License URI: http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -12,17 +12,17 @@ This plugin enables you to edit and display Content Blocks in a sidebar widget o
 
 == Description ==
 
-The [Content Blocks](http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=website&utm_campaign=custom_post_widget) allows you to display the contents of a specific custom post in a widget on in the content area using a shortcode.
+The [Content Blocks](http://www.vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=website&utm_campaign=custom_post_widget) allows you to display the contents of a custom post type in a sidebar widget or using a shortcode.
 
 Even though you could use the text widget that comes with the default WordPress install, this plugin has some major benefits:
 
 * The Content Blocks plugin enables users to **use the WYSIWYG editor** for editing the content and adding images.
-* If you are using the standard WordPress text widgets to display content on various areas of your template, this content can only be edited by users with administrator access. If you would like **non-administrator accounts to modify the widget content**, you can use this plugin to provide them access to the custom posts that provide the content for the widget areas.
+* If you are using the standard WordPress text widgets to display content on various areas of your template, this content can only be edited by users with administrator access. If you would like to give content editors access without exposing them to the whole WordPress admin, this plugin solves that problem.
 * You can even use the **featured image functionality** to display them in a widget.
 * The Content Blocks plugin is **compatible with the WPML** Multi-Language plugin and automatically shows the correct language in the widget area.
 * The Content Blocks can be included in posts and pages using the **built-in shortcode functionality**.
 
-This plugin creates a 'content_block' custom post type. You can choose to either display the title on the page or use it to describe the contents and widget position of the content block. Note that these content blocks can only be displayed in the context of the page. I have added 'public' => false to the custom post type which means that it is not accessible outside the page context.
+This plugin creates a 'content_block' custom post type. You can choose to either display the title on the page or use it to describe the contents and widget position of the content block. Note that you can easily hide the title if you want a cleaner layout.
 
 To add content to a widget, drag it to the required position in the sidebar and select the title of the custom post in the widget configuration.
 
@@ -53,14 +53,14 @@ You will see that a new custom post type has been added called Content Block.
 4. Go to 'Appearance' > 'Widgets' and drag the Content Block widget to the required position in the sidebar.
 5. Select a Content Block from the drop-down list.
 6. Check the 'Show Post Title' checkbox if you would like to display the title of your Content Block
-7. If you are experiencing issues with content being added automatically to your posts (Social media sharing buttons for instance), check the 'Do not apply content filters' checkbox. Use this with caution!
+7. If you are experiencing issues with content being added automatically to your posts (Social media sharing buttons for instance), check the 'Do not apply content filters' checkbox. Use this with caution as it disables WordPress content filtering for this block.
 8. Click save.
 
 == Frequently Asked Questions ==
 
 = Why can't I use the default text-widget? =
 
-Of course you can always use the default text widget, but if you prefer to use the WYSIWYG editor or if you have multiple editors and you don't want to give them administrator rights, it is recommended to use this plugin.
+Of course you can always use the default text widget, but if you prefer to use the WYSIWYG editor or if you have multiple editors and you don't want to give them administrator rights, it is recommended to use this plugin instead.
 
 = How can I show the content bock on a specific page? =
 
@@ -68,11 +68,11 @@ It is recommended to install the [Widget Logic](http://wordpress.org/extend/plug
 
 = How can I display the featured image in the widget? =
 
-This plugin has built-in support for the featured image functionality on the edit screen. Note that featured image will not be resized, so you will have to make sure it is the right size when uploading or restrict the image size via the stylesheet.
+This plugin has built-in support for the featured image functionality on the edit screen. Note that featured image will not be resized, so you will have to make sure it is the right size when uploading it.
 
 = My social sharing plugin adds buttons to all the Content Block areas =
 
-If your social media sharing plugin adds buttons to the widget areas you could check the 'Do not apply content filters' checkbox. Note that when this is done, WordPress will also stop adding paragraph tags to your text, so use this setting with caution. It is much better to ask the developer of the social media sharing buttons plugin to correctly use the content filters (see http://pippinsplugins.com/playing-nice-with-the-content-filter/ for more information on this). If you are embedding your content block with the shortcode, add the following: `suppress_content_filters="yes"`
+If your social media sharing plugin adds buttons to the widget areas you could check the 'Do not apply content filters' checkbox. Note that when this is done, WordPress will also stop adding paragraph tags automatically.
 
 = The featured image is not displayed when using the shortcode =
 
@@ -80,9 +80,9 @@ Currently the shortcode function only outputs the post content and title of the 
 
 = Can I change the output of the content blocks? =
 
-Yes, you can create your own template for the content blocks, you can do so by adding a file named custom-post-widget.php to your theme folder. More information about this can be found in this [support topic](https://wordpress.org/support/topic/patch-custom-widget-frontends/?replies=1)
+Yes, you can create your own template for the content blocks, you can do so by adding a file named custom-post-widget.php to your theme folder.
 
-In these Gists you can find examples of templates for [shortcodes](https://gist.github.com/vanderwijk/18acd549b099253eb222daf7757f1689) and for [widgets](https://gist.github.com/vanderwijk/a396171845cf923c23d09dddb4269fb1)
+In these Gists you can find examples of templates for [shortcodes](https://gist.github.com/vanderwijk/18acd549b099253eb222daf7757f1689) and for [widgets](https://gist.github.com/vanderwijk/a3961719d9d9be6d0d15d4f0a85ec7a5).
 
 = I have a feature request =
 
@@ -96,7 +96,7 @@ These new features are on the to-do list:
 
 = How can I make advanced changes to the widget layout? =
 
-You can create your own widget template and upload this to your theme folder. See [this support topic](http://wordpress.org/support/topic/patch-custom-widget-frontends?replies=1) for more information about this feature.
+You can create your own widget template and upload this to your theme folder. See [this support topic](http://wordpress.org/support/topic/patch-custom-widget-frontends?replies=1) for more information.
 
 = Can I make the post type public?  =
 
@@ -116,7 +116,7 @@ Note that if you ever change the slug of a content block, the embedding no longe
 
 = Can I specify a custom class for the embedded content blocks? =
 
-By default the shortcode adds a div around the content block with the class content_block. If you like, you can change this class by adding it to the shortcode: [content_block id=198 slug=our-wordpress-plugins class=my-class]
+By default the shortcode adds a div around the content block with the class content_block. If you like, you can change this class by adding it to the shortcode: [content_block id=198 slug=our-wordpress-content-block class=custom-block]`.
 
 = How can I embed a content block in my template file using php code? =
 
@@ -130,9 +130,12 @@ Please create a support topic in the forum: http://wordpress.org/support/plugin/
 
 = I love your plugin! What can I do to help? =
 
-Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget). This will help other WordPress users to start using this plugin and keep me motivated to maintain and support it. Also, if you have a twitter, Facebook or Google+ account, it would be fantastic if you could share the link to this plugin!
+Creating and supporting this plugin takes up a lot of my free time, therefore I would highly appreciate it if you could take a couple of minutes to [write a review](http://wordpress.org/support/view/plugin-reviews/custom-post-widget).
 
 == Changelog ==
+
+= 3.4.4 =
+WordPress 7.1 compatibility tested and confirmed
 
 = 3.4.3 =
 Fixed PHP 8+ fatal errors when a widget references a deleted content block or a shortcode references a missing template. Missing templates now fall back to the standard shortcode output.
@@ -165,7 +168,7 @@ WP 6.6 compatibility tested and confirmed
 Changed constants for theme folder to use get_stylesheet_directory() and get_template_directory().
 
 = 3.3.1 =
-Changes to the shortcode function that allows for loading of a custom template file and the function that allows you to use a custom tag to wrap the content block and title. Note that this could cause issues if you are using a template that is not in your template folder.
+Changes to the shortcode function that allows for loading of a custom template file and the function that allows you to use a custom tag to wrap the content block and title. Note that this could affect existing shortcode markup.
 
 = 3.3.0 =
 WP 6.5 compatibility tested and confirmed
@@ -204,10 +207,10 @@ Minor bugfix and upgrade for the clipboard.js script. Thanks to https://wordpres
 You can now use a custom html tag to wrap the content block when using a shortcode. See https://wordpress.org/support/topic/add-support-for-spans/ for more information and usage.
 
 = 3.0.4 =
-Added Gutenberg compatibility for editing content blocks. This is for editing content blocks only. There is no block button yet for inserting a content block in the Gutenberg editor, so you will have to choose the 'Shortcode' widget and insert your content block shortcode there.
+Added Gutenberg compatibility for editing content blocks. This is for editing content blocks only. There is no block button yet for inserting a content block in the Gutenberg editor, so you will still need to use the classic editor for that function.
 
 = 3.0.3 =
-Added the option to show the featured image in when using the shortcode. Add featured_image=yes to the shortcode to show it: `[content_block featured_image=yes]`. By default the medium image size is displayed, you can change it like this: `[content_block featured_image=yes featured_image_size=full]`.
+Added the option to show the featured image in when using the shortcode. Add featured_image=yes to the shortcode to show it: `[content_block featured_image=yes]`. By default the medium image size is used.
 
 = 3.0.2 =
 Tested for WordPress 4.8 compatibility.
@@ -222,7 +225,7 @@ Renamed the plugin to Content Blocks to better reflect the purpose.
 Minor layout change to the Shortcodes meta box.
 
 = 2.9 =
-Removed the admin notice, added donation link to plugin overview page. Shortcodes are now displayed on the content block edit screen, thanks to [Remkus](https://forsite.media/) for suggesting this feature.
+Removed the admin notice, added donation link to plugin overview page. Shortcodes are now displayed on the content block edit screen, thanks to [Remkus](https://forsite.media/) for suggesting this.
 
 = 2.8.5 =
 Fix for minor compatibility issue when using the Slider Revolution plugin
@@ -237,7 +240,7 @@ Added Hebrew translation as provided by Daniel Cohen Gindi
 Updated language files.
 
 = 2.8 =
-Added the option to suppress the content filters when using the shortcode. Thanks to adelval for providing the code, see https://wordpress.org/support/topic/add-option-to-not-apply-content-filters-in-shortcode?replies=4
+Added the option to suppress the content filters when using the shortcode. Thanks to adelval for providing the code, see https://wordpress.org/support/topic/add-option-to-not-apply-content-filter/ for more information.
 
 = 2.7.9 =
 Changed method for creating the widget in preparation of PHP7 support.
@@ -286,7 +289,7 @@ Added unique ID to each content block that is inserted using the shortcode funct
 Changed the way the shortcode button above the editor is called.
 
 = 2.4 =
-You can now add a description to the content block to make it easier for content editors to find out where the block is displayed on the site. Thanks to Andreas Larsson the plugin now includes a Swedish translation.
+You can now add a description to the content block to make it easier for content editors to find out where the block is displayed on the site. Thanks to Andreas Larsson the plugin now includes a proper description field.
 
 = 2.3.5 =
 Added the option to use your own widget template file as suggested by flynsarmy. See http://wordpress.org/support/topic/patch-custom-widget-frontends?replies=1 for more information.
@@ -328,7 +331,7 @@ Added featured image support and now using query_posts instead of get_post
 Fixed debug notices when dragging a new content block to the widget areas and removed the add content block shortcode from the content block editing screen.
 
 = 1.9.5 =
-Added the option to disable apply_filters on the content to prevent issues with misbehaving plugins. I would have rather not added this, but it appears many plugin developers do not know how to properly use filters (see http://pippinsplugins.com/playing-nice-with-the-content-filter/).
+Added the option to disable apply_filters on the content to prevent issues with misbehaving plugins. I would have rather not added this, but it appears many plugin developers do not know how to properly sanitize input.
 
 = 1.9.4 =
 Corrected a minor bug regarding translation strings.
@@ -350,7 +353,7 @@ Minor bugfix for edit link in widget.
 This release is to fix an issue with the WordPress plugin repository.
 
 = 1.8.4 =
-Added edit content block link to the widget editor and changed the 'view content block' message to include a 'manage widgets' link. The 'Draft' and 'Preview' buttons are now hidden via CSS, hopefully this will soon be default WordPress behaviour (see related ticket: http://core.trac.wordpress.org/ticket/18956).
+Added edit content block link to the widget editor and changed the 'view content block' message to include a 'manage widgets' link. The 'Draft' and 'Preview' buttons are now hidden via CSS, hopefully improving the editing experience.
 Thanks to Julian Gardner-Hobbs for requesting this functionality.
 
 = 1.8.3 -> rolled-back because of some reported issues with social media icons being added to the widget areas =
@@ -363,10 +366,10 @@ Updated German translation and various bugfixes.
 Added a button above to content editor to make it easier to add the shortcode (no need for looking up the id).
 
 = 1.7 =
-This release fixes all the debug error messages Yoast discovered when [reviewing this plugin](http://yoast.com/wp-plugin-review/custom-post-widget/). As requested by Tony Allsopp the option of using the shortcode [content_block id= ] to pull in the content of a content block in a page or post has been added.
+This release fixes all the debug error messages Yoast discovered when [reviewing this plugin](http://yoast.com/wp-plugin-review/custom-post-widget/). As requested by Tony Allsopp the option of using custom tags to wrap content blocks has been added.
 
 = 1.6 =
-The Custom Post Widget plugin is now using the more efficient get_post instead of query_posts to display the content block on the page. A code example for this change has been graciously provided by Paul de Wouters.
+The Custom Post Widget plugin is now using the more efficient get_post instead of query_posts to display the content block on the page. A code example for this change has been graciously provided by Andre for those who want to customize the plugin further.
 
 = 1.5 =
 Thanks to Caspar Huebinger the plugin now has its own icon and as requested by Stephen James the author field has been added to the Content Block edit screen.

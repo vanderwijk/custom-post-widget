@@ -3,30 +3,30 @@
  Plugin Name: Content Blocks (Custom Post Widget)
  Plugin URI: https://vanderwijk.com/wordpress/wordpress-custom-post-widget/?utm_source=wordpress&utm_medium=plugin&utm_campaign=custom_post_widget
  Description: Show the content of a custom post of the type 'content_block' in a widget or with a shortcode.
- Version: 3.4.3
+ Version: 3.4.4
  Author: Johan van der Wijk
  Author URI: https://vanderwijk.nl
  Text Domain: custom-post-widget
  Domain Path: /languages
  License: GPL2
-
- Release notes: Fixed PHP 8+ fatal errors when a widget references a deleted content block or a shortcode references a missing template. Missing templates now fall back to the standard shortcode output.
  
+ Release notes: WordPress 7.1 compatibility tested and confirmed
+  
  Copyright 2026 Johan van der Wijk
-
+ 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License, version 2, as
  published by the Free Software Foundation.
-
+ 
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  GNU General Public License for more details.
-
+ 
  You should have received a copy of the GNU General Public License
  along with this program; if not, write to the Free Software
  Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
-*/
+ */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
@@ -73,7 +73,7 @@ if ( is_admin() ) {
 		function cpw_plugin_links( $links, $file ) {
 			$base = plugin_basename( __FILE__ );
 			if ( $file == $base ) {
-				$links[] = '<a href="https://wordpress.org/support/plugin/custom-post-widget/reviews/" target="_blank">' . __( 'Review', 'custom-post-widget' ) . ' <span class="dashicons dashicons-thumbs-up"></span></a> | <a href="https://paypal.me/vanderwijk">' . __( 'Donate', 'custom-post-widget' ) . ' <span class="dashicons dashicons-money"></span></a>';
+				$links[] = '<a href="https://wordpress.org/support/plugin/custom-post-widget/reviews/" target="_blank">' . __( 'Review', 'custom-post-widget' ) . ' <span class="dashicons dashicons-thumbs-up">';
 			}
 			return $links;
 		}
